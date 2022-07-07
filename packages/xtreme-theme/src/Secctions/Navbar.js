@@ -1,16 +1,19 @@
 import React from "react";
-import { Global, connect, css,styled  } from "frontity";
+import { Global, connect, css, styled } from "frontity";
 import RevSettings from "../revslider/public/assets/css/settings.css";
 import FlexSlider from "../js/plugins/flexslider/flexslider.css";
+import menubar from '../Icons/326672_menu_icon.svg'
 
 const Navbar = () => {
   return (
     <>
       <HeaderWrapper className="header_style_wrapper">
-        <div className="top_bar hasbg ">
-          <div id="mobile_nav_icon"></div>
+        <div className="top_bar hasbg " css={top_bar}>
+          <MobileIcon id="mobile_nav_icon">
+            <img src={menubar} />
+          </MobileIcon>
           <MenuWrapper id="menu_wrapper">
-{/*            <a
+            {/*            <a
               id="custom_logo"
               className="logo_wrapper hidden"
               href="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
@@ -18,8 +21,6 @@ const Navbar = () => {
               <img src="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png" alt="" width="69" height="33" />
             </a>*/}
             <LogoWrapper
-              id="custom_logo_transparent"
-              className="logo_wrapper default"
               href="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
             >
               <img
@@ -49,15 +50,21 @@ const Navbar = () => {
                 </button>
               </div>
               <div id="autocomplete"></div>
-          </form>*/}
-            <div id="nav_wrapper" css={css`
-                  float: right;
-                `}>
+            </form>*/}
+            <div
+              id="nav_wrapper"
+              css={css`
+                float: right;
+              `}
+            >
               <div className="nav_wrapper_inner">
-                <div id="menu_border_wrapper" css={css`
-                  display: block;
-                  float: right;
-                `} >
+                <div
+                  id="menu_border_wrapper"
+                  css={css`
+                    display: block;
+                    float: right;
+                  `}
+                >
                   <div className="menu-main-menu-container">
                     <NavMenu id="main_menu" className="nav">
                       <li className="menu-item">
@@ -67,12 +74,15 @@ const Navbar = () => {
                         <a href="sample-page.html">
                           <span>Tours</span>
                         </a>
-                        <ul className="sub-menu" css={css`
-                          opacity: 1;
-                          overflow: hidden;
-                          height: auto;
-                          display: none;
-                        `}>
+                        <ul
+                          className="sub-menu"
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
                           <li className="menu-item">
                             <a href="tour-grid-fullwidth.html">
                               <span>Tour Grid Fullwidth</span>
@@ -110,16 +120,22 @@ const Navbar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="megamenu col4 menu-item menu-item-has-children arrow menu-item-8">
+                      <li
+                        className="megamenu col4 menu-item menu-item-has-children arrow menu-item-8"
+                        css={largeMenu}
+                      >
                         <a href="#">
                           <span>Pages</span>
                         </a>
-                        <ul className="sub-menu" css={css`
-                          opacity: 1;
-                          overflow: hidden;
-                          height: auto;
-                          display: none;
-                        `}>
+                        <ul
+                          className="sub-menu"
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
                           <li className="hidden menu-item menu-item-has-children arrow">
                             <a href="#">
                               <span>Column One</span>
@@ -146,7 +162,7 @@ const Navbar = () => {
                             <a href="#">
                               <span>Column Two</span>
                             </a>
-                            <ul className="sub-menu" >
+                            <ul className="sub-menu">
                               <li className="menu-item">
                                 <a href="page-right-sidebar.html">
                                   <span>Page Right Sidebar</span>
@@ -209,12 +225,15 @@ const Navbar = () => {
                         <a href="#">
                           <span>Blog</span>
                         </a>
-                        <ul className="sub-menu" css={css`
-                          opacity: 1;
-                          overflow: hidden;
-                          height: auto;
-                          display: none;
-                        `}>
+                        <ul
+                          className="sub-menu"
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
                           <li className="menu-item">
                             <a href="blog-fullwidth.html">
                               <span>Fullwidth</span>
@@ -247,16 +266,22 @@ const Navbar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="megamenu col4 menu-item menu-item-has-children arrow menu-item-10">
+                      <li
+                        className="megamenu col4 menu-item menu-item-has-children arrow menu-item-10"
+                        css={largeMenu}
+                      >
                         <a href="#">
                           <span>Shortcodess</span>
                         </a>
-                        <ul className="sub-menu" css={css`
-                          opacity: 1;
-                          overflow: hidden;
-                          height: auto;
-                          display: none;
-                        `}>
+                        <ul
+                          className="sub-menu"
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
                           <li className="hidden menu-item menu-item-has-children arrow">
                             <a href="#">
                               <span>Column One</span>
@@ -339,9 +364,7 @@ const Navbar = () => {
         </div>
         <Global styles={css(RevSettings, FlexSlider)} />
       </HeaderWrapper>
-      <HeaderWrapper>
-
-      </HeaderWrapper>
+      <HeaderWrapper></HeaderWrapper>
     </>
   );
 };
@@ -349,6 +372,7 @@ const Navbar = () => {
 const HeaderWrapper = styled.div`
   width: 100%;
   float: left;
+  background: red;
 `;
 const TopBar = styled.div`
   background-color: rgba(0, 0, 0, 0);
@@ -360,43 +384,73 @@ const TopBar = styled.div`
   width: 100%;
 `;
 const MenuWrapper = styled.div`
-margin:auto;
-width: 960px;
-z-index:99999;
+  margin: auto;
+  width: 960px;
+  z-index: 99999;
+  @media (min-width:768px) and (max-width:960px){
+    width: 726px;
+    text-align:left;
+  }
+  @media (max-width: 767px){
+    width: 95%;
+    text-align:left;
+  }
 `;
 
 const LogoWrapper = styled.a`
   margin: 25px 0 15px 0;
   float: left;
-
-  img{
-    max-width:none !important;
+  @media(max-width: 960px){
+    display: inline-block;
+    float: none;
+    margin:11px 0 5px 20px!important;
+    margin-top:5px !important;
+  }
+  img {
+    max-width: none !important;
   }
 `;
 const TelHeaderAction = styled.div`
-  color:#000;
+  color: #000;
   background: #fff;
   float: right;
-  border-radius:100px;
-  font-family:'Raleway', 'Helvetica Neue', Arial,Verdana,sans-serif;
+  border-radius: 100px;
+  font-family: "Raleway", "Helvetica Neue", Arial, Verdana, sans-serif;
   padding: 2px 20px 2px 20px;
   font-size: 13px;
   margin: 28px 0 0 20px;
   font-weight: bold;
-
-  i{
+  @media(max-width:960px){
+    margin-top:15px;
+  }
+  i {
     margin-top: 5px;
   }
 `;
+const MobileIcon = styled.div`
+  display: none;
+  @media (max-width:960px){
+    display: block;
+    align-items: center;
+    cursor:pointer;
+    margin-left:20px;
+    width:25px;
+    float:left;
+    transition:all 0.2s ease;
+    margin-top:20px;
+  }
+`;
 const NavMenu = styled.ul`
-  margin-top: 30px;
+  margin-top: 30px!important;
   list-style: none;
   display: block;
   padding: 0;
   margin: 0;
   margin-bottom:0;
   float: right;
-
+  @media (max-width: 770px){
+    display: none;
+  }
   li{
     display: inline-block;
     margin: 0 2px 0 0;
@@ -409,10 +463,18 @@ const NavMenu = styled.ul`
       letter-spacing: 1px;
       font-size: 12px;
       display: inline-block;
+      z-index: 2;
+      position: relative;
       margin: 0;
       padding:0 10px 30px 10px;
       font-family: 'Raleway', 'Helvetica Neue', Arial,Verdana,sans-serif;
       text-transform: uppercase;
+      text-decoration: none!important;
+    }
+    &:hover{
+      ul{
+        display: block;
+      }
     }
     ul{
       list-style:none;
@@ -420,9 +482,11 @@ const NavMenu = styled.ul`
       padding: 0;
       width: 210px;
       margin: 0;
+      margin-top: 0px!important;
       margin-left:0;
       z-index:99999;
       float:right;
+      background:rgba(34, 34, 34, 1);
       li{
         clear: both;
         width:100%;
@@ -446,11 +510,61 @@ const NavMenu = styled.ul`
           border-bottom: 1px solid #444;
           background:transparent;
           height: auto;
+          text-decoration: none!important;
         }
       }
     }
   }
 `;
-
+let largeMenu = css`
+  ul {
+    position: absolute;
+    width: 960px !important;
+    left: 0;
+    right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 15px !important;
+    box-sizing: border-box;
+    li {
+      width: 25% !important;
+      border: 0;
+      display: block !important;
+      box-sizing: border-box;
+      clear: none !important;
+      float: left;
+      padding: 0 !important;
+      margin: 0;
+      text-align: left;
+      list-style: none;
+      ul {
+        position: relative;
+        width: 100% !important;
+        margin: 0;
+        border: 0;
+        box-shadow: 0 0 0;
+        display: block !important;
+        opacity: 1 !important;
+        left: 0;
+        z-index: 99999;
+        li {
+          width: 100% !important;
+          border: 0 !important;
+          list-style: none;
+          clear: none !important;
+        }
+      }
+    }
+  }
+`;
+let top_bar = css`
+  padding: 0;
+  width: 100%;
+  float: left;
+  background-color:rgba(0, 0, 0, 0);
+  border:0;
+  position:relative;
+  z-index: 8;
+`;
 
 export default connect(Navbar);

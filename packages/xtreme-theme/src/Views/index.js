@@ -13,12 +13,12 @@ import Style from "../css/style.css";
 import Suprsized from "../css/supersized.css";
 import ToolTipster from "../css/supersized.css";
 import Wordpress from "../css/wordpress.css";
-import Navbar from "../Secctions/Navbar";
+import Wrapper from "../Secctions/Wrapper";
 const Root = () => {
   return (
     <>
-      <Navbar />
-      <Global
+      <Wrapper />
+{/*      <Global
         styles={css(
           Animation,
           CustomCss,
@@ -33,8 +33,9 @@ const Root = () => {
           Suprsized,
           ToolTipster,
           Wordpress
-        )}
-      />
+        )
+        }
+      />*/}
     </>
   );
 };
