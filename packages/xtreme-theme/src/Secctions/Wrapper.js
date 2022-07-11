@@ -5,6 +5,7 @@ import SliderBanner from "./PageSlider";
 import SectionOffers from "./BestOffers";
 import PresentatioSection from './SectionPresentation';
 import WhyChoose from './WhyChose';
+import FooterSecction from './Footer'
 
 const Wrapper = () => {
   return (
@@ -15,6 +16,7 @@ const Wrapper = () => {
         <PresentatioSection />
         <WhyChoose/>
         <SectionOffers />
+        <FooterSecction/>
       </PpbWrapper>
     </>
   );

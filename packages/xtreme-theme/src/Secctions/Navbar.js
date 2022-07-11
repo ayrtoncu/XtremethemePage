@@ -1,7 +1,7 @@
 import React from "react";
 import { Global, connect, css, styled } from "frontity";
 import menubar from '../Icons/326672_menu_icon.svg'
-
+import logoblanco from '../assets/imgs/logos/Logo Blanco.png'
 const Navbar = () => {
   return (
     <>
@@ -21,8 +21,8 @@ const Navbar = () => {
             <LogoWrapper
               href="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
             >
-              <img
-                src="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
+                <img
+                src={logoblanco}
                 alt=""
                 width="69"
                 height="33"
@@ -385,7 +385,7 @@ const MenuWrapper = styled.div`
 `;
 
 const LogoWrapper = styled.a`
-  margin: 25px 0 15px 0;
+  margin: 16px 0 15px 0;
   float: left;
   @media(max-width: 960px){
     display: inline-block;
@@ -393,8 +393,15 @@ const LogoWrapper = styled.a`
     margin:11px 0 5px 20px!important;
     margin-top:5px !important;
   }
+  @media(max-width: 425px){
+    img{
+      width: 100px!important;
+    }
+  }
   img {
     max-width: none !important;
+    height: auto;
+    width: 150px;
   }
 `;
 const TelHeaderAction = styled.div`
@@ -548,7 +555,7 @@ let top_bar = css`
   padding: 0;
   width: 100%;
   float: left;
-  background-color:rgba(0, 0, 0, 0);
+  background-color:rgba(0, 0, 0, 0.3);
   border:0;
   position:relative;
   z-index: 8;

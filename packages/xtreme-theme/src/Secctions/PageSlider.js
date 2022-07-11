@@ -9,7 +9,7 @@ const SliderBanner = () => {
         <Slider>
           <Slide>
             <div css={slotHolder}>
-              <div css={bgImage}></div>
+              <div css={bgImagebanner}></div>
             </div>
             <div css={parallaxWrap}>
               <h1>The Mountains are Calling For You</h1>
@@ -60,7 +60,8 @@ const Slide = styled.div`
   top: 0;
   left: 0;
 `;
-let bgImage = css`
+//Class
+let bgImagebanner = css`
 background-repeat:no-repeat;
 background-image: url(${banner});
 width: 100%;
@@ -70,7 +71,6 @@ background-size: cover;
 visibility: inherit;
 z-index: 20;
 `;
-//Class
 let wrapperbanner = css`
   position: relative;
   width: 100%;
