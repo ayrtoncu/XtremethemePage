@@ -1,6 +1,6 @@
 import { Global, connect, css,styled  } from "frontity";
 import React from 'react';
-import banner from '../assets/imgs/banner.jpg'
+import banner from '../assets/imgs/banner/bannerCusco.jpg'
 
 const SliderBanner = () => {
   return (
@@ -9,7 +9,11 @@ const SliderBanner = () => {
         <Slider>
           <Slide>
             <div css={slotHolder}>
-              <img css={bgImage} src={banner}></img>
+              <div css={bgImage}></div>
+            </div>
+            <div css={parallaxWrap}>
+              <h1>The Mountains are Calling For You</h1>
+              <h2>Discovery More</h2>
             </div>
           </Slide>
         </Slider>
@@ -36,7 +40,7 @@ const Slider = styled.div`
   position: absolute;
   max-height: none;
   overflow: visible;
-  width: 100vw;
+  width: 100%;
   left:0px;
   z-index: 0;
 `;
@@ -48,7 +52,7 @@ const Slide = styled.div`
   visibility: inherit;
   opacity: 1;
   background-color:rgba(255, 255, 255, 0);
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
   background-position: 0 0;
@@ -57,7 +61,14 @@ const Slide = styled.div`
   left: 0;
 `;
 let bgImage = css`
-background-repeat:repeat;
+background-repeat:no-repeat;
+background-image: url(${banner});
+width: 100%;
+height: 100%;
+background-position: center top;
+background-size: cover;
+visibility: inherit;
+z-index: 20;
 `;
 //Class
 let wrapperbanner = css`
@@ -77,5 +88,20 @@ height: 100%;
 visibility: inherit;
 opacity: 1;
 transform: matrix(1, 0, 0, 1, 0, 0);
+`;
+let parallaxWrap = css`
+  position: absolute;
+  display: block;
+  visibility: visible;
+  left: 50%;
+  top: 50%;
+  z-index:5;
+  color: #ffffff;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  h1{
+    font-size: 50px;
+    text-transform: uppercase;
+  }
 `;
 export default connect(SliderBanner);

@@ -1,7 +1,5 @@
 import React from "react";
 import { Global, connect, css, styled } from "frontity";
-import RevSettings from "../revslider/public/assets/css/settings.css";
-import FlexSlider from "../js/plugins/flexslider/flexslider.css";
 import menubar from '../Icons/326672_menu_icon.svg'
 
 const Navbar = () => {
@@ -362,9 +360,7 @@ const Navbar = () => {
             </div>
           </MenuWrapper>
         </div>
-        <Global styles={css(RevSettings, FlexSlider)} />
       </HeaderWrapper>
-      <HeaderWrapper></HeaderWrapper>
     </>
   );
 };
@@ -372,16 +368,7 @@ const Navbar = () => {
 const HeaderWrapper = styled.div`
   width: 100%;
   float: left;
-  background: red;
-`;
-const TopBar = styled.div`
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
   position: relative;
-  z-index: 8;
-  float: left;
-  padding: 0;
-  width: 100%;
 `;
 const MenuWrapper = styled.div`
   margin: auto;
