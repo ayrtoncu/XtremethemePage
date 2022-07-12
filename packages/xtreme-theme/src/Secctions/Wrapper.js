@@ -5,7 +5,8 @@ import SliderBanner from "./PageSlider";
 import SectionOffers from "./BestOffers";
 import PresentatioSection from './SectionPresentation';
 import WhyChoose from './WhyChose';
-import FooterSecction from './Footer'
+import FooterSecction from './Footer';
+import XtremeExcellence from "./XtremeExcellence";
 
 const Wrapper = () => {
   return (
@@ -16,8 +17,10 @@ const Wrapper = () => {
         <PresentatioSection />
         <WhyChoose/>
         <SectionOffers />
-        <FooterSecction/>
+        <XtremeExcellence />
+        <FooterSecction />
       </PpbWrapper>
+
     </>
   );
 };
