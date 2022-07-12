@@ -149,6 +149,12 @@ const FooterLogo = styled.div`
       width: 50%;
     }
   }
+  @media(min-width: 1024px){
+    width: 50%;
+    img{
+      width: 30%;
+    }
+  }
 `;
 const FooterPayMethods = styled.div`
   width: 100%;
@@ -161,6 +167,12 @@ const FooterPayMethods = styled.div`
     width: 50%;
     img{
       width: 50%;
+    }
+  }
+  @media(min-width: 1024px){
+    width: 50%;
+    img{
+      width: 30%;
     }
   }
 `;

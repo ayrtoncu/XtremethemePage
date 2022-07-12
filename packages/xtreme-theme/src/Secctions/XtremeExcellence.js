@@ -170,6 +170,9 @@ const ContainerContent = styled.div`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  @media (min-width: 780px) {
+    width: 960px;
+  }
 `;
 const Row = styled.div`
   display: flex;

@@ -2,9 +2,9 @@ const settings = {
   "name": "xtreme",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://www.x-tremetourbulencia.com/",
+      "title": "Xtreme Tourbulencia",
+      "description": "Xtreme Tourism Agency"
     }
   },
   "packages": [
@@ -17,7 +17,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://www.x-tremetourbulencia.com/"
         }
       }
     },

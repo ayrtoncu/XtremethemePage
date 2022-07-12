@@ -1,7 +1,8 @@
 import React from "react";
 import { Global, connect, css, styled } from "frontity";
-import menubar from '../Icons/326672_menu_icon.svg'
-import logoblanco from '../assets/imgs/logos/Logo Blanco.png'
+import Link from "@frontity/components/link";
+import menubar from "../Icons/326672_menu_icon.svg";
+import logoblanco from "../assets/imgs/logos/Logo Blanco.png";
 const Navbar = () => {
   return (
     <>
@@ -18,21 +19,18 @@ const Navbar = () => {
             >
               <img src="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png" alt="" width="69" height="33" />
             </a>*/}
-            <LogoWrapper
+            <Link
+              link="/"
+              css={logoWrapper}
               href="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
             >
-                <img
-                src={logoblanco}
-                alt=""
-                width="69"
-                height="33"
-              />
-            </LogoWrapper>
-            <a href="tel:1800-2345-5678">
+              <img src={logoblanco} alt="" width="69" height="33" />
+            </Link>
+            {/* <Link href="tel:+51 984610644">
               <TelHeaderAction className="header_action">
-                <i className="fa fa-phone"></i>1800-2345-5678{" "}
+                <i className="fa fa-phone"></i>+51 984610644{" "}
               </TelHeaderAction>
-            </a>
+            </Link> */}
             {/*<form
               role="search"
               method="get"
@@ -65,12 +63,12 @@ const Navbar = () => {
                 >
                   <div className="menu-main-menu-container">
                     <NavMenu id="main_menu" className="nav">
-                      <li className="menu-item">
-                        <a href="index.html">Home</a>
-                      </li>
+                      {/* <li className="menu-item">
+                        <Link link="/">Home</Link>
+                      </li> */}
                       <li className="menu-item menu-item-has-children arrow menu-item-6">
-                        <a href="sample-page.html">
-                          <span>Tours</span>
+                        <a href="#">
+                          <span>Inca Trail</span>
                         </a>
                         <ul
                           className="sub-menu"
@@ -82,39 +80,31 @@ const Navbar = () => {
                           `}
                         >
                           <li className="menu-item">
-                            <a href="tour-grid-fullwidth.html">
-                              <span>Tour Grid Fullwidth</span>
-                            </a>
+                            <Link link="/short-inca-trail-machu-picchu/">
+                              <span>Short Inca Trail 2 Days Trek</span>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a href="tour-grid-contain.html">
-                              <span>Tour Grid Contain</span>
-                            </a>
+                            <Link link="/inca-trail-trek-machu-picchu-4days/">
+                              <span>
+                                Inca Trail To MachuPicchu 4 Days Classic
+                              </span>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a href="tour-classic-fullwidth.html">
-                              <span>Tour Classic Fullwidth</span>
-                            </a>
+                            <Link link="/inca-trail-machu-picchu-hike-private-2days/">
+                              <span>Luxury Inca Trail 2 Days</span>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a href="tour-classic-contain.html">
-                              <span>Tour Classic Contain</span>
-                            </a>
+                            <Link link="/luxury-inca-trail-machu-picchu-4days/">
+                              <span>Luxury Inca Trail 4 Days</span>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a href="tour-list-image.html">
-                              <span>Tour List Image</span>
-                            </a>
-                          </li>
-                          <li className="menu-item">
-                            <a href="tour-list.html">
-                              <span>Tour List</span>
-                            </a>
-                          </li>
-                          <li className="menu-item">
-                            <a href="east-europe.html">
-                              <span>Single Tour</span>
-                            </a>
+                            <Link link="/salkantay-trekking-inca-trail-hike-machu-picchu-6day/">
+                              <span>Salkantay Trek - Inca Trail 6 Days</span>
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -122,8 +112,8 @@ const Navbar = () => {
                         className="megamenu col4 menu-item menu-item-has-children arrow menu-item-8"
                         css={largeMenu}
                       >
-                        <a href="#">
-                          <span>Pages</span>
+                        <a>
+                          <span>Alternative Treks</span>
                         </a>
                         <ul
                           className="sub-menu"
@@ -136,95 +126,135 @@ const Navbar = () => {
                         >
                           <li className="hidden menu-item menu-item-has-children arrow">
                             <a href="#">
-                              <span>Column One</span>
+                              <span>Salkantay Trek</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="about-us.html">
-                                  <span>About Us</span>
-                                </a>
+                                <Link link="/salkantay-trek-machu-picchu-hike-4days/">
+                                  <span>Salkantay Trek MachuPicchu 4 Days</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="paris.html">
-                                  <span>Destination</span>
-                                </a>
+                                <Link link="/salkantay-trek-hike-machu-picchu-5days/">
+                                  <span>Salkantay Trek MachuPichu 5 Days</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="page-fullwidth.html">
-                                  <span>Page Fullwidth</span>
-                                </a>
+                                <Link link="/salkantay-trekking-inca-trail-hike-machu-picchu-6day/">
+                                  <span>
+                                    Salkantay Trek - Inca Trail 6 Days{" "}
+                                  </span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="hidden menu-item menu-item-has-children arrow">
                             <a href="#">
-                              <span>Column Two</span>
+                              <span>Lares Trek</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="page-right-sidebar.html">
-                                  <span>Page Right Sidebar</span>
-                                </a>
+                                <Link link="/lares-trek-machu-picchu-yanacocha-4days/">
+                                  <span>Lares Trek MachuPicchu 4 Days</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="page-left-sidebar.html">
-                                  <span>Page Left Sidebar</span>
-                                </a>
+                                <Link link="/lares-trek-inca-trail-machu-picchu-4days/">
+                                  <span>
+                                    Lares Trek - Inca Trail MachuPicchu 4 Days
+                                  </span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="hidden menu-item menu-item-has-children arrow">
                             <a href="#">
-                              <span>Column Three</span>
+                              <span>Choquequirao Trek</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="gallery-fullscreen.html">
-                                  <span>Gallery Fullscreen</span>
-                                </a>
+                                <Link link="/hoquequirao-trek-hike-4days/">
+                                  <span>
+                                    Choquequirao Trek - Huanicapa 4 Days
+                                  </span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="gallery-grid-fullwidth.html">
-                                  <span>Gallery Grid Fullwidth</span>
-                                </a>
+                                <Link link="/choquequirao-trek-6days/">
+                                  <span>
+                                    Choquequirao to MachuPicchu 6 Days
+                                  </span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="gallery-grid-contain.html">
-                                  <span>Gallery Grid Contain</span>
-                                </a>
+                                <Link link="/choquequirao-trek-machu-picchu-hike-8days/">
+                                  <span>
+                                    Choquequirao Trek MachuPicchu hike 8 Days
+                                  </span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="hidden menu-item menu-item-has-children arrow menu-item-9">
                             <a href="#">
-                              <span>Column Four</span>
+                              <span>Huchuy Qosqo Trek</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="contact-us.html">
-                                  <span>Contact Header Image</span>
-                                </a>
+                                <Link link="/huchuy-qosqo-machu-picchu-2days/">
+                                  <span>
+                                    Huchuy Qosqo to MachuPicchu 2 Days
+                                  </span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="contact-us-2.html">
-                                  <span>Contact Map</span>
-                                </a>
+                                <Link link="/huchuy-qosqo-trek-and-sacred-valley-2days/">
+                                  <span>
+                                    Huchuy Qosqo Trek - Sacred Valley 2 Days
+                                  </span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="contact-us-3.html">
-                                  <span>Contact Fullscreen</span>
-                                </a>
+                                <Link link="/huchuy-qosqo-sacred-valley-with-machupicchu-03days/">
+                                  <span>
+                                    Huchuy Qosqo, Sacred Valley with MachuPicchu
+                                    3 Days
+                                  </span>
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span>Ausangate Trek</span>
+                            </a>
+                            <ul className="sub-menu">
+                              <li>
+                                <Link link="/ausangate-trek-sigrenacocha-4days/">
+                                  <span>Ausangate Trek 4 Days</span>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link link="/ausangate-trek-hike-5days/">
+                                  <span>Ausangate Trek 5 Days</span>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link link="/ausangate-trek-with-rainbow-mountain-5days/">
+                                  <span>
+                                    Ausangate Trek With Rainbow Mountain 5 Days
+                                  </span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item menu-item-has-children arrow menu-item-7">
+                      <li>
                         <a href="#">
-                          <span>Blog</span>
+                          <span>Dayli Tours</span>
                         </a>
                         <ul
-                          className="sub-menu"
                           css={css`
                             opacity: 1;
                             overflow: hidden;
@@ -232,47 +262,139 @@ const Navbar = () => {
                             display: none;
                           `}
                         >
-                          <li className="menu-item">
-                            <a href="blog-fullwidth.html">
-                              <span>Fullwidth</span>
+                          <li>
+                            <Link link="/short-inca-trail-machu-picchu/">
+                              <span>Humantay lake</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link link="/inca-trail-trek-machu-picchu-4days/">
+                              <span>The Rainbow Mountain</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link link="/inca-trail-machu-picchu-hike-private-2days/">
+                              <span>Sacred Valley</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link link="/luxury-inca-trail-machu-picchu-4days/">
+                              <span>Queswachaka Inca Bridge</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link link="/salkantay-trekking-inca-trail-hike-machu-picchu-6day/">
+                              <span>Waqrapukara</span>
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">
+                          <span>Vacation Packages</span>
+                        </a>
+                        <ul
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
+                          <li>
+                            <a href="">
+                              <span>Cusco Traditional 6 Days</span>
                             </a>
                           </li>
-                          <li className="menu-item">
+                          <li>
                             <a href="blog-right-sidebar.html">
-                              <span>Right Sidebar</span>
+                              <span>Cusco Adventure 5 Days</span>
                             </a>
                           </li>
-                          <li className="menu-item">
-                            <a href="blog-left-sidebar.html">
-                              <span>Left Sidebar</span>
-                            </a>
+                          <li>
+                            <Link link="/cusco-puno-8-days/">
+                              <span>Cusco Puno Traditional 8 Days</span>
+                            </Link>
                           </li>
-                          <li className="menu-item">
+                          <li>
                             <a href="blog-masonry.html">
-                              <span>Masonry</span>
+                              <span>Arequipa - Puno - Cusco 9 Days</span>
                             </a>
                           </li>
-                          <li className="menu-item">
+                          <li>
                             <a href="blog-masonry-fullwidth.html">
-                              <span>Masonry Fullwidth</span>
+                              <span>Peru Complete 13 Days</span>
                             </a>
                           </li>
-                          <li className="menu-item">
+                          <li>
                             <a href="standard-blog-post-with-image.html">
-                              <span>Single Post</span>
+                              <span>Arequipa Colca Canyon</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="standard-blog-post-with-image.html">
+                              <span>Puno Titicaca Lake</span>
                             </a>
                           </li>
                         </ul>
                       </li>
-                      <li
-                        className="megamenu col4 menu-item menu-item-has-children arrow menu-item-10"
-                        css={largeMenu}
-                      >
-                        <a href="#">
-                          <span>Shortcodess</span>
+                      <li css={largeMenu}>
+                        <a href="">
+                          <span>Manu</span>
                         </a>
                         <ul
-                          className="sub-menu"
+                          css={css`
+                            opacity: 1;
+                            overflow: hidden;
+                            height: auto;
+                            display: none;
+                          `}
+                        >
+                          <li>
+                            <a href="#">
+                              <span>Manu Zone Reserved</span>
+                            </a>
+                            <ul>
+                              <li>
+                                <Link link="/manu-zone-reserve-natural-8d-7n/">
+                                  <span>
+                                    Manu Zone Reserved Natural Paradise 8 Days
+                                  </span>
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span>Manu Cultural Zone</span>
+                            </a>
+                            <ul>
+                              <li>
+                                <Link link="/tour-manu-amazon-cultural-zone-4d-3n/">
+                                  <span>Tour Manu Cultural Zone 4 Days</span>
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">
+                              <span>Tours in Tambopata</span>
+                            </a>
+                            <ul className="sub-menu">
+                              <li className="menu-item">
+                                <a>
+                                  <span>Tambopata</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li css={largeMenu}>
+                        <a href="">
+                          <span>About Us</span>
+                        </a>
+                        <ul
                           css={css`
                             opacity: 1;
                             overflow: hidden;
@@ -281,72 +403,92 @@ const Navbar = () => {
                           `}
                         >
                           <li className="hidden menu-item menu-item-has-children arrow">
-                            <a href="#">
-                              <span>Column One</span>
+                            <a href="">
+                              <span>About Us</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="accordion-toggles.html">
-                                  <span>Accordion &#038; Toggles</span>
-                                </a>
+                                <Link link="/about-us/our-offices/">
+                                  <span>Our Offices</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="alert-boxes.html">
-                                  <span>Alert Boxes</span>
-                                </a>
+                                <Link link="/about-us/why-xtreme-tourbulencia/">
+                                  <span>Why Xtreme Tourbulencia?</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="animated-content.html">
-                                  <span>Animated Content</span>
-                                </a>
+                                <Link link="/about-us/yellow-team/">
+                                  <span>Yellow Team</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="buttons-social-icons.html">
-                                  <span>Buttons &#038; Social Icons</span>
-                                </a>
+                                <Link link="/about-us/responsible-tourism/">
+                                  <span>Responsible Tourism</span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="hidden menu-item menu-item-has-children arrow">
-                            <a href="#">
-                              <span>Column Two</span>
+                            <a href="">
+                              <span>Book Information</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="columns.html">
-                                  <span>Columns</span>
-                                </a>
+                                <Link link="/book-information/book-your-trip/">
+                                  <span>Book Your</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="dividers.html">
-                                  <span>Dividers</span>
-                                </a>
+                                <Link link="/terms-and-conditions/">
+                                  <span>Term and Conditions</span>
+                                </Link>
                               </li>
                               <li className="menu-item">
-                                <a href="gallery.html">
-                                  <span>Gallery</span>
-                                </a>
+                                <Link link="/personal-data-protection-policy/">
+                                  <span>Personal Data Proteccion Policy</span>
+                                </Link>
+                              </li>
+                              <li className="menu-item">
+                                <Link link="/book-information/how-to-make-booking/">
+                                  <span>How to Make Booking</span>
+                                </Link>
+                              </li>
+                              <li className="menu-item">
+                                <Link link="/book-information/rent-optional/">
+                                  <span>Optional and Rent</span>
+                                </Link>
+                              </li>
+                              <li className="menu-item">
+                                <Link link="/book-information/hiking-tours-calendars/">
+                                  <span>Hiking Tours Calendars</span>
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="hidden menu-item menu-item-has-children arrow">
-                            <a href="#">
-                              <span>Column Four</span>
+                            <a href="">
+                              <span>Blog</span>
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item">
-                                <a href="pricing.html">
-                                  <span>Pricing</span>
+                                <a href="">
+                                  <span>Inca Trail Availability 2021</span>
                                 </a>
                               </li>
                               <li className="menu-item">
-                                <a href="promo-boxes.html">
-                                  <span>Promo Boxes</span>
+                                <a href="">
+                                  <span>Our Videos</span>
                                 </a>
                               </li>
                               <li className="menu-item">
-                                <a href="tabs.html">
-                                  <span>Tabs</span>
+                                <Link link="/blog">
+                                  <span>Our Blog</span>
+                                </Link>
+                              </li>
+                              <li className="menu-item">
+                                <a href="">
+                                  <span>Payments</span>
                                 </a>
                               </li>
                             </ul>
@@ -372,30 +514,30 @@ const HeaderWrapper = styled.div`
 `;
 const MenuWrapper = styled.div`
   margin: auto;
-  width: 960px;
+  width: 1020px;
   z-index: 99999;
-  @media (min-width:768px) and (max-width:960px){
+  @media (min-width: 768px) and (max-width: 960px) {
     width: 726px;
-    text-align:left;
+    text-align: left;
   }
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     width: 95%;
-    text-align:left;
+    text-align: left;
   }
 `;
 
-const LogoWrapper = styled.a`
+const logoWrapper = css`
   margin: 16px 0 15px 0;
   float: left;
-  @media(max-width: 960px){
+  @media (max-width: 960px) {
     display: inline-block;
     float: none;
-    margin:11px 0 5px 20px!important;
-    margin-top:5px !important;
+    margin: 11px 0 5px 20px !important;
+    margin-top: 5px !important;
   }
-  @media(max-width: 425px){
-    img{
-      width: 100px!important;
+  @media (max-width: 425px) {
+    img {
+      width: 100px !important;
     }
   }
   img {
@@ -414,8 +556,8 @@ const TelHeaderAction = styled.div`
   font-size: 13px;
   margin: 28px 0 0 20px;
   font-weight: bold;
-  @media(max-width:960px){
-    margin-top:15px;
+  @media (max-width: 960px) {
+    margin-top: 15px;
   }
   i {
     margin-top: 5px;
@@ -423,15 +565,15 @@ const TelHeaderAction = styled.div`
 `;
 const MobileIcon = styled.div`
   display: none;
-  @media (max-width:960px){
+  @media (max-width: 960px) {
     display: block;
     align-items: center;
-    cursor:pointer;
-    margin-left:20px;
-    width:25px;
-    float:left;
-    transition:all 0.2s ease;
-    margin-top:20px;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 25px;
+    float: left;
+    transition: all 0.2s ease;
+    margin-top: 20px;
   }
 `;
 const NavMenu = styled.ul`
@@ -513,7 +655,7 @@ const NavMenu = styled.ul`
 let largeMenu = css`
   ul {
     position: absolute;
-    width: 960px !important;
+    width: 1020px !important;
     left: 0;
     right: 0;
     margin-left: auto !important;
@@ -521,7 +663,7 @@ let largeMenu = css`
     padding: 15px !important;
     box-sizing: border-box;
     li {
-      width: 25% !important;
+      width: 20% !important;
       border: 0;
       display: block !important;
       box-sizing: border-box;
@@ -555,9 +697,9 @@ let top_bar = css`
   padding: 0;
   width: 100%;
   float: left;
-  background-color:rgba(0, 0, 0, 0.3);
-  border:0;
-  position:relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  position: relative;
   z-index: 8;
 `;
 

@@ -7,17 +7,20 @@ import PresentatioSection from './SectionPresentation';
 import WhyChoose from './WhyChose';
 import FooterSecction from './Footer';
 import XtremeExcellence from "./XtremeExcellence";
+import Certifications from "./CertificationsSection";
+import DayliTours from "./DayliTours";
 
 const Wrapper = () => {
   return (
     <>
-      <Navbar />
       <SliderBanner />
       <PpbWrapper>
         <PresentatioSection />
-        <WhyChoose/>
-        <SectionOffers />
+        <WhyChoose />
         <XtremeExcellence />
+        <SectionOffers />
+        <DayliTours/>
+        <Certifications/>
         <FooterSecction />
       </PpbWrapper>
 
