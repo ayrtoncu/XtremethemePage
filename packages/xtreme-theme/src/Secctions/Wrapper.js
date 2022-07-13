@@ -9,6 +9,8 @@ import FooterSecction from './Footer';
 import XtremeExcellence from "./XtremeExcellence";
 import Certifications from "./CertificationsSection";
 import DayliTours from "./DayliTours";
+import SocialXtreme from "./SocialXtreme";
+
 
 const Wrapper = () => {
   return (
@@ -19,6 +21,7 @@ const Wrapper = () => {
         <WhyChoose />
         <XtremeExcellence />
         <SectionOffers />
+        <SocialXtreme/>
         <DayliTours/>
         <Certifications/>
         <FooterSecction />
