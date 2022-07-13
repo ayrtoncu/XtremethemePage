@@ -25,10 +25,10 @@ const DayliTours = () => {
                 css={backimg}
               />
               <div id="titleSpecial1" css={titleSpecial}>
-                TOur
+                Humantay Lake
               </div>
               <div id="titleMore1" css={titleMore}>
-                <div css={btn}>Hola</div>
+                <div css={btn}>See More</div>
               </div>
             </Link>
           </div>
@@ -41,10 +41,10 @@ const DayliTours = () => {
                 css={backimg}
               />
               <div id="titleSpecial1" css={titleSpecial}>
-                TOur
+                The Rainbow Mountain
               </div>
               <div id="titleMore1" css={titleMore}>
-                <div css={btn}>Hola</div>
+                <div css={btn}>See More</div>
               </div>
             </Link>
           </div>
@@ -57,10 +57,10 @@ const DayliTours = () => {
                 css={backimg}
               />
               <div id="titleSpecial1" css={titleSpecial}>
-                TOur
+                Sacred Valley
               </div>
               <div id="titleMore1" css={titleMore}>
-                <div css={btn}>Hola</div>
+                <div css={btn}>See More</div>
               </div>
             </Link>
           </div>
@@ -73,10 +73,10 @@ const DayliTours = () => {
                 css={backimg}
               />
               <div id="titleSpecial1" css={titleSpecial}>
-                TOur
+                Qeswachaka Inca Bridge
               </div>
               <div id="titleMore1" css={titleMore}>
-                <div css={btn}>Hola</div>
+                <div css={btn}>See More</div>
               </div>
             </Link>
           </div>
@@ -89,10 +89,10 @@ const DayliTours = () => {
                 css={backimg}
               />
               <div id="titleSpecial1" css={titleSpecial}>
-                TOur
+                Waqrapukara
               </div>
               <div id="titleMore1" css={titleMore}>
-                <div css={btn}>Hola</div>
+                <div css={btn}>See More</div>
               </div>
             </Link>
           </div>
@@ -104,7 +104,6 @@ const DayliTours = () => {
 export default connect(DayliTours);
 
 const Section = styled.div`
-  border-top: 1px solid #e1e1e1;
   padding: 60px 0 30px 0;
   float: left;
   width: 100%;
@@ -131,6 +130,7 @@ const ContentText = styled.div`
   }
 `;
 const ContentDayliTours = styled.div`
+margin-top:40px;
   flex-wrap: wrap;
   display: flex;
   margin-left: auto;
@@ -191,7 +191,6 @@ let titleMore = css`
   text-align: center;
   font-size: 14px;
   color: #fff;
-  text-transform: uppercase;
   opacity: 0;
   transition:.3s;
 `;
@@ -199,4 +198,17 @@ let titleMore = css`
 
 let btn = css`
 transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+color:#fff;
+background-color:#28a745;
+border-color:#28a745;
+padding:.5rem 1rem;
+font-size:1.25rem;
+line-height:1.5;
+border-radius:.3rem;
+display:inline-block;
+font-weight:400;
+text-align:center;
+vertical-align:middle;
+user-select:none;
+cursor:pointer;
 `;

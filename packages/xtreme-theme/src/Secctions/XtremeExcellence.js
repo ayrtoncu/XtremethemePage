@@ -1,136 +1,273 @@
 import { connect, styled, css } from "frontity";
 import React from "react";
+import Link from "@frontity/components/link";
 const XtremeExcellence = () => {
   return (
     <Section>
-      <ContentText>
-        <h2>
-          <span
+      <Container>
+        <ContentText>
+          <h2>
+            <span
+              css={css`
+                color: rgba(6, 95, 70);
+              `}
+            >
+              XTREME
+            </span>{" "}
+            Excellence <br />
+          </h2>
+          <div
             css={css`
-              color: rgba(6, 95, 70);
-            `}
-          >
-            XTREME
-          </span>{" "}
-          Excellence <br />
-        </h2>
-        <div
-          css={css`
           font-size 1.7rem;
           display: block;
           margin-top: 14px;
           font-weight:100;
         `}
-        >
-          <strong>Xtreme Tourbulencia</strong> Travel Agency is a Peruvian
-          company interested in the development and promote sustainable tourism,
-          protecting the local environment and culture. We offer a variety of
-          tours and adventure expeditions in the whole of Peru. Our tours are
-          all designed with the highest level of customer service and
-          responsible tourism. We look forward to sharing Peru’s amazing
-          outdoors and deep culture heritage with you!
-        </div>
-      </ContentText>
-      <ContainerContent>
-        <Row>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
-              </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
-              </div>
-            </a>
+          >
+            <strong>Xtreme Tourbulencia</strong> Travel Agency is a Peruvian
+            company interested in the development and promote sustainable
+            tourism, protecting the local environment and culture. We offer a
+            variety of tours and adventure expeditions in the whole of Peru. Our
+            tours are all designed with the highest level of customer service
+            and responsible tourism. We look forward to sharing Peru’s amazing
+            outdoors and deep culture heritage with you!
           </div>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
+        </ContentText>
+        <ContainerContent>
+          <Item>
+            <Link>
+              <div
+                css={css`
+                  max-height: 250px;
+                  height: 100%;
+                `}
+              >
+                <img
+                  css={imgtop}
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                ></img>
               </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
+            </Link>
+            <div
+              css={css`
+                padding: 1.25rem;
+                padding-bottom: 1.5rem;
+              `}
+            >
+              <Link>
+                <h2
+                  css={css`
+                    color: rgba(17, 24, 39, 1);
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    letter-spacing: -0.025em;
+                  `}
+                >
+                  Titulo
+                </h2>
+              </Link>
+              <p css={text}>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <Link css={button}>
+                Read more
+                <svg
+                  css={css`
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0.5rem;
+                    margin-right: -0.25rem;
+                  `}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
+          </Item>
+          <Item>
+            <Link>
+              <div
+                css={css`
+                  max-height: 250px;
+                  height: 100%;
+                `}
+              >
+                <img
+                  css={imgtop}
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                ></img>
               </div>
-            </a>
-          </div>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
+            </Link>
+            <div
+              css={css`
+                padding: 1.25rem;
+                padding-bottom: 1.5rem;
+              `}
+            >
+              <Link>
+                <h2
+                  css={css`
+                    color: rgba(17, 24, 39, 1);
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    letter-spacing: -0.025em;
+                  `}
+                >
+                  Titulo
+                </h2>
+              </Link>
+              <p css={text}>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <Link css={button}>
+                Read more
+                <svg
+                  css={css`
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0.5rem;
+                    margin-right: -0.25rem;
+                  `}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
+          </Item>
+          <Item>
+            <Link>
+              <div
+                css={css`
+                  max-height: 250px;
+                  height: 100%;
+                `}
+              >
+                <img
+                  css={imgtop}
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                ></img>
               </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
+            </Link>
+            <div
+              css={css`
+                padding: 1.25rem;
+                padding-bottom: 1.5rem;
+              `}
+            >
+              <Link>
+                <h2
+                  css={css`
+                    color: rgba(17, 24, 39, 1);
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    letter-spacing: -0.025em;
+                  `}
+                >
+                  Titulo
+                </h2>
+              </Link>
+              <p css={text}>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <Link css={button}>
+                Read more
+                <svg
+                  css={css`
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0.5rem;
+                    margin-right: -0.25rem;
+                  `}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
+          </Item>
+          <Item>
+            <Link>
+              <div
+                css={css`
+                  max-height: 250px;
+                  height: 100%;
+                `}
+              >
+                <img
+                  css={imgtop}
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                ></img>
               </div>
-            </a>
-          </div>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
-              </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
-              </div>
-            </a>
-          </div>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
-              </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
-              </div>
-            </a>
-          </div>
-          <div css={col}>
-            <a css={givesBackBox}>
-              <div css={givesBackBoxImage}>
-                <picture>
-                  <source srcSet="https://www.x-tremetourbulencia.com/wp-content/uploads/2021/08/indigenous-women-responsible.jpeg" />
-                  <img></img>
-                </picture>
-              </div>
-              <div css={givesBackBoxContent}>
-                <div css={givesBackBoxTitle}>Camping Equipament</div>
-                <div css={givesBackBoxSubtitle}>
-                  The Best Camping Equipament
-                </div>
-              </div>
-            </a>
-          </div>
-        </Row>
-      </ContainerContent>
+            </Link>
+            <div
+              css={css`
+                padding: 1.25rem;
+                padding-bottom: 1.5rem;
+              `}
+            >
+              <Link>
+                <h2
+                  css={css`
+                    color: rgba(17, 24, 39, 1);
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    letter-spacing: -0.025em;
+                  `}
+                >
+                  Titulo
+                </h2>
+              </Link>
+              <p css={text}>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <Link css={button}>
+                Read more
+                <svg
+                  css={css`
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0.5rem;
+                    margin-right: -0.25rem;
+                  `}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
+          </Item>
+        </ContainerContent>
+      </Container>
     </Section>
   );
 };
@@ -143,6 +280,13 @@ const Section = styled.div`
   width: 100%;
   clear: both;
   position: relative;
+`;
+const Container = styled.div`
+  max-width: 80%;
+  width: 100%;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 `;
 const ContentText = styled.div`
   text-align: center;
@@ -160,81 +304,68 @@ const ContentText = styled.div`
     letter-spacing: 0;
   }
   @media (min-width: 780px) {
-    width: 960px;
+    width: 100%;
   }
 `;
 const ContainerContent = styled.div`
-  margin-top: 3rem;
+  gap: 1rem;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-auto-flow: column;
+  width: 100%;
+  display: grid;
+  position: relative;
+  margin-top: 40px;
+  @media(min-width:768px){
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media(min-width:1020px){
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+`;
+const Item = styled.div`
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(229, 231, 235, 1);
+  border-width: 1px;
+  border-radius: 0.5rem;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  @media (min-width: 780px) {
-    width: 960px;
-  }
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 `;
-const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-`;
-//class
-let col = css`
-  padding: 0.2rem;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    flex: 0 0 32.5%;
-    max-width: 33.33333%;
-  }
-`;
-
-let givesBackBox = css`
+let imgtop = css`
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   width: 100%;
   height: 100%;
-  background-color: lightgreen;
-  overflow: hidden;
-  border-radius: 3px;
-  position: relative;
-  display: block;
+  max-width: 100%;
 `;
-let givesBackBoxImage = css`
-  position: relative;
-  padding: 0 !important;
-  img {
-    display: block;
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    transition: 0.5s;
-  }
+let title = css``;
+let text = css`
+  color: rgba(55, 65, 81, 1);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0;
 `;
-let givesBackBoxContent = css`
-  position: absolute;
-  padding: 0 !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+let button = css`
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgba(4, 120, 87, 1);
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 4px;
+  border-radius: 0.5rem;
+  border-style: solid;
   align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  display: flex;
-  flex-direction: column;
-`;
-let givesBackBoxTitle = css`
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 4px;
-  padding: 0 !important;
-`;
-const givesBackBoxSubtitle = css`
-  font-size: 15px;
-  padding: 0 !important;
+  display: inline-flex;
 `;
