@@ -2,6 +2,7 @@ import { connect, styled, css } from "frontity";
 import React from "react";
 
 import tripadivorchoice from '../assets/imgs/certifies/tripadvisor-salkantay-trekking-150x150.png';
+import ToursIncaTrail from './TopTours';
 
 const PresentatioSection = () => {
   return (
