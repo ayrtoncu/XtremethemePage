@@ -36,17 +36,10 @@ const XtremeExcellence = () => {
         <ContainerContent>
           <Item>
             <Link>
-              <div
-                css={css`
-                  max-height: 250px;
-                  height: 100%;
-                `}
-              >
                 <img
                   css={imgtop}
                   src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
                 ></img>
-              </div>
             </Link>
             <div
               css={css`
@@ -63,7 +56,7 @@ const XtremeExcellence = () => {
                     letter-spacing: -0.025em;
                   `}
                 >
-                  Titulo
+                  Oor Chefs
                 </h2>
               </Link>
               <p css={text}>
@@ -84,9 +77,9 @@ const XtremeExcellence = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    // fill-rule="evenodd"
                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    // clip-rule="evenodd"
                   ></path>
                 </svg>
               </Link>
@@ -94,17 +87,10 @@ const XtremeExcellence = () => {
           </Item>
           <Item>
             <Link>
-              <div
-                css={css`
-                  max-height: 250px;
-                  height: 100%;
-                `}
-              >
                 <img
                   css={imgtop}
                   src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
                 ></img>
-              </div>
             </Link>
             <div
               css={css`
@@ -121,7 +107,7 @@ const XtremeExcellence = () => {
                     letter-spacing: -0.025em;
                   `}
                 >
-                  Titulo
+                  Our Porters
                 </h2>
               </Link>
               <p css={text}>
@@ -142,9 +128,9 @@ const XtremeExcellence = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    // fill-rule="evenodd"
                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    // clip-rule="evenodd"
                   ></path>
                 </svg>
               </Link>
@@ -152,17 +138,10 @@ const XtremeExcellence = () => {
           </Item>
           <Item>
             <Link>
-              <div
-                css={css`
-                  max-height: 250px;
-                  height: 100%;
-                `}
-              >
                 <img
                   css={imgtop}
                   src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
                 ></img>
-              </div>
             </Link>
             <div
               css={css`
@@ -179,7 +158,7 @@ const XtremeExcellence = () => {
                     letter-spacing: -0.025em;
                   `}
                 >
-                  Titulo
+                  Our Guides
                 </h2>
               </Link>
               <p css={text}>
@@ -200,9 +179,9 @@ const XtremeExcellence = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    // fill-rule="evenodd"
                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    // clip-rule="evenodd"
                   ></path>
                 </svg>
               </Link>
@@ -210,17 +189,10 @@ const XtremeExcellence = () => {
           </Item>
           <Item>
             <Link>
-              <div
-                css={css`
-                  max-height: 250px;
-                  height: 100%;
-                `}
-              >
                 <img
                   css={imgtop}
                   src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
                 ></img>
-              </div>
             </Link>
             <div
               css={css`
@@ -237,7 +209,7 @@ const XtremeExcellence = () => {
                     letter-spacing: -0.025em;
                   `}
                 >
-                  Titulo
+                  Our Camps
                 </h2>
               </Link>
               <p css={text}>
@@ -258,9 +230,9 @@ const XtremeExcellence = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    // fill-rule="evenodd"
                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    // clip-rule="evenodd"
                   ></path>
                 </svg>
               </Link>
@@ -331,15 +303,14 @@ const Item = styled.div`
   border-width: 1px;
   border-radius: 0.5rem;
   max-width: 100%;
-  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
-    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)
 `;
 let imgtop = css`
   object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 100%;
 `;
 let title = css``;

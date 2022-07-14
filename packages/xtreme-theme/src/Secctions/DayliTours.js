@@ -140,11 +140,11 @@ const ItemTour = styled.div`
   padding: 0.2rem;
   width: 100%;
   @media(min-width:768px){
-    width: 19.3%;
+    width: 33.3%;
     padding: 0.15rem;
   }
   @media(min-width:1024px){
-    width: 19.5%;
+    width: 20%;
     padding: 0.15rem;
   }
 `;
