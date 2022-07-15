@@ -2,15 +2,19 @@ import { connect, styled,css } from "frontity";
 import React from "react";
 import inglaterra from '../assets/imgs/tours/1600x1200-8-560x460.jpg';
 import garden from '../assets/imgs/tours/1600x1200-9-560x460.jpg';
-import bigben from '../assets/imgs/tours/1600x1200-11-560x460.jpg'
+import bigben from '../assets/imgs/tours/1600x1200-11-560x460.jpg';
+import TopTours from "./TopTours";
 
 const SectionOffers = () => {
   return (
     <SectionTourPadding>
-      <Content>
+      <Container>
+        <ContentText>
         <h2>BEST INCA TRAIL</h2>
         <div>Check out our best promotion tours</div>
-        <Portafolio>
+        </ContentText>
+        <TopTours/>
+        {/* <Portafolio>
           <div css={elementBox}>
             <div css={thirdGallery}>
               <a>
@@ -125,8 +129,8 @@ const SectionOffers = () => {
               </a>
             </div>
           </div>
-        </Portafolio>
-      </Content>
+        </Portafolio> */}
+      </Container>
     </SectionTourPadding>
   );
 };
@@ -138,6 +142,35 @@ const SectionTourPadding = styled.div`
   width: 100%;
   clear: both;
   position: relative;
+`;
+const Container = styled.div`
+  max-width: 85%;
+  width: 100%;
+  padding-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media(min-width: 1030px){
+    max-width: 70%;
+  }
+`;
+const ContentText = styled.div`
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  padding-bottom: 0;
+  margin: auto;
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  @media (min-width: 780px) {
+    width: 100%;
+  }
 `;
 const Content = styled.div`
   text-align: center;

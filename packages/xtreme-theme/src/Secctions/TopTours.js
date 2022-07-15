@@ -12,29 +12,52 @@ const ToursIncaTrail = () => {
               <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
             </div>
             <div css={packageCardHDetails}>
-              <span>5D/4N</span>
-              <span>Up to 10 people</span>
+              <span>4D/3N</span>
+              <span>Up to 16 people</span>
               <span>Challenging</span>
             </div>
           </div>
           <div css={packageCardContent}>
             <h5 css={packageCardCLocation}>Cusco</h5>
-            <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
+            <h2 css={packageCardCTitle}>Classic Inca Trail 4 Days</h2>
             <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
+              WayllaBamba - Yuncachimpa - Warmihuañusca Pass - Wiñayhuayna - Machu Picchu - Cusco
             </h4>
             <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
+            The Inca Trail to Machu Picchu 4 days is beyond a doubt one of the most beautiful trails in the Americas. This is the classic experience, hiking through ecosystems and flora from high desert to rainforests, and visiting amazing Inca constructions.
             </p>
           </div>
           <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
+            <span css={packageCardFooterPrice}> </span>
+            <div css={packageCardFooterButtom}>Book Now</div>
+          </div>
+        </Link>
+      </Item>
+      <Item>
+        <Link css={packageCard}>
+          <div css={packageCardHeading}>
+            <div css={packageCardHimage}>
+              <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
+            </div>
+            <div css={packageCardHDetails}>
+              <span>2D/1N</span>
+              <span>Up to 16 people</span>
+              <span>Challenging</span>
+            </div>
+          </div>
+          <div css={packageCardContent}>
+            <h5 css={packageCardCLocation}>Cusco</h5>
+            <h2 css={packageCardCTitle}>Short Inca Trail 2 Days</h2>
+            <h4 css={packageCardCVisitedPlaces}>
+              Wiñayhuayna - Aguas Calientes - Machu Picchu - Cusco
+            </h4>
+            <p css={packageCardCExcerpt}>
+            The Short Inka Trail is designed for travelers who want to experience the magic of the Inca Trail, without committing the time needed for one of the longer multi day hikes. This trek is great for families with children as it is only one day of hiking, about 6 hours total.
+            </p>
+          </div>
+          <div css={packageCardFooter}>
+            <span css={packageCardFooterPrice}></span>
+            <div css={packageCardFooterButtom}>Book Now</div>
           </div>
         </Link>
       </Item>
@@ -46,7 +69,7 @@ const ToursIncaTrail = () => {
             </div>
             <div css={packageCardHDetails}>
               <span>5D/4N</span>
-              <span>Up to 10 people</span>
+              <span>Up to 16 people</span>
               <span>Challenging</span>
             </div>
           </div>
@@ -54,20 +77,15 @@ const ToursIncaTrail = () => {
             <h5 css={packageCardCLocation}>Cusco</h5>
             <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
             <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
+              Mollepata - Soraypampa - Salkantay Pass - Rayampata - Chaullay - Wiñaypoco - Lucmabamba - Machu Picchu - Cusco
             </h4>
             <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
+            The Salkantay 5-Day Trek to Machu Picchu perfectly combines cultural and natural beauty; you’ll enjoy the magnificent view of snow-capped Salkantay (6264m/20551f), the highest mountain in the Vilcabamba range. 
             </p>
           </div>
           <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
+            <span css={packageCardFooterPrice}></span>
+            <div css={packageCardFooterButtom}>Book Now</div>
           </div>
         </Link>
       </Item>
@@ -78,29 +96,24 @@ const ToursIncaTrail = () => {
               <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
             </div>
             <div css={packageCardHDetails}>
-              <span>5D/4N</span>
-              <span>Up to 10 people</span>
+              <span>4D/3N</span>
+              <span>Up to 16 people</span>
               <span>Challenging</span>
             </div>
           </div>
           <div css={packageCardContent}>
             <h5 css={packageCardCLocation}>Cusco</h5>
-            <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
+            <h2 css={packageCardCTitle}>Lares Trek Machu Picchu 4 Days</h2>
             <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
+              Cuncani - Yanacocha - Sondor - Huacawasi C'asa Pass - Mantaya - Pucara - Ollantaytambo - Machu Picchu - Cusco
             </h4>
             <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
+            The Lares Valley Trek is one of the most picturesque in Cusco, and is home to many traditional weavers and farmers. You’ll visit them to see a weaving demonstration, done in the traditional method, using natural dyes and home-spun yarn. The people live day-to-day, growing what they eat and knitting what they wear. Each day of the trek is reasonably paced with ample time to enjoy the incredible scenery.
             </p>
           </div>
           <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
+            <span css={packageCardFooterPrice}></span>
+            <div css={packageCardFooterButtom}>Book Now</div>
           </div>
         </Link>
       </Item>
@@ -111,29 +124,24 @@ const ToursIncaTrail = () => {
               <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
             </div>
             <div css={packageCardHDetails}>
-              <span>5D/4N</span>
+              <span>4D/3N</span>
               <span>Up to 10 people</span>
               <span>Challenging</span>
             </div>
           </div>
           <div css={packageCardContent}>
             <h5 css={packageCardCLocation}>Cusco</h5>
-            <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
+            <h2 css={packageCardCTitle}>Private Inca Trail 4 Days</h2>
             <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
+            WayllaBamba - Yuncachimpa - Warmihuañusca Pass - Wiñayhuayna - Machu Picchu - Cusco
             </h4>
             <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
+            This version of the 4-Day Inca Trail is a private service - not in a public group - with more comfort, quality and flexibility over the timing of your trek. This option allows more accommodation to the needs of your group, as well as a more tranquil experience. Your private guide will cater to your group’s discovery of the secrets and legends of the majestic Inca empire.
             </p>
           </div>
           <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
+            <span css={packageCardFooterPrice}></span>
+            <div css={packageCardFooterButtom}>Book Now</div>
           </div>
         </Link>
       </Item>
@@ -144,62 +152,24 @@ const ToursIncaTrail = () => {
               <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
             </div>
             <div css={packageCardHDetails}>
-              <span>5D/4N</span>
-              <span>Up to 10 people</span>
+              <span>4D/3N</span>
+              <span>Up to 16 people</span>
               <span>Challenging</span>
             </div>
           </div>
           <div css={packageCardContent}>
             <h5 css={packageCardCLocation}>Cusco</h5>
-            <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
+            <h2 css={packageCardCTitle}>Choquequirao Trek - Huanicapa 4 Days</h2>
             <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
+              Cachora - Chiquisca - Marampata - Choquequirao - Carmen
             </h4>
             <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
+            Choquequirao was most likely built during the reign of the Inca king Pachacuti Inca Yupanqui and is considered to be the last bastion of resistance and refuge of the Sons of the Sun, who fled from the city of Cusco when it was under siege in 1535. Led by Manco Inca Yupanqui, they took refuge in Choquequirao.
             </p>
           </div>
           <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
-          </div>
-        </Link>
-      </Item>
-      <Item>
-        <Link css={packageCard}>
-          <div css={packageCardHeading}>
-            <div css={packageCardHimage}>
-              <img src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"></img>
-            </div>
-            <div css={packageCardHDetails}>
-              <span>5D/4N</span>
-              <span>Up to 10 people</span>
-              <span>Challenging</span>
-            </div>
-          </div>
-          <div css={packageCardContent}>
-            <h5 css={packageCardCLocation}>Cusco</h5>
-            <h2 css={packageCardCTitle}>Classic Salkantay Trek 5 Days</h2>
-            <h4 css={packageCardCVisitedPlaces}>
-              Humantay Lake - Salkantay Pass - Llactapata - Machu Picchu
-            </h4>
-            <p css={packageCardCExcerpt}>
-              The Salkantay trek to Machu Picchu is one of the most famous treks
-              in Cusco, Peru and it is undoubtedly the best alternative route to
-              experience the original Inca paths. Its highest point is a high
-              pass of over 4700m near the magnificent glacier-clad peak of
-              Salkantay. From here you descend in spectacular fashion to the
-              vertiginous valleys of the subtropics.
-            </p>
-          </div>
-          <div css={packageCardFooter}>
-            <span css={packageCardFooterPrice}>From $745.00</span>
-            <div css={packageCardFooterButtom}>Read More</div>
+            <span css={packageCardFooterPrice}></span>
+            <div css={packageCardFooterButtom}>Book Now</div>
           </div>
         </Link>
       </Item>
@@ -275,7 +245,7 @@ let packageCardContent = css`
 `;
 let packageCardCLocation = css`
   text-transform: uppercase;
-  color: #ff0055;
+  color: #008B39;
   font-family: "Poppins", sans-serif;
   font-weight:800;
 `;
@@ -323,12 +293,12 @@ let packageCardFooterPrice = css`
   color:#333;
 `;
 let packageCardFooterButtom = css`
-  border: 1px solid #ff6600;
-  color: #ff6600;
+  border: 1px solid #008B39;
+  color: #008B39;
   height: 2rem;
   font-size: 0.8rem;
   min-width: auto;
-  padding: 0 1rem;
+  padding: 0 0.7rem;
   text-align: center;
   border-radius: 10rem;
   line-height: 2.8rem;
@@ -338,4 +308,12 @@ let packageCardFooterButtom = css`
   -webkit-box-align: center;
   align-items: center;
   letter-spacing: 1px;
+  :hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #008B39;
+  }
+  @media(min-width: 1025px ){
+    padding: 0 1rem;
+  }
 `;

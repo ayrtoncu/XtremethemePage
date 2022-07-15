@@ -56,7 +56,7 @@ const XtremeExcellence = () => {
                     letter-spacing: -0.025em;
                   `}
                 >
-                  Oor Chefs
+                  Our Chefs
                 </h2>
               </Link>
               <p css={text}>
@@ -89,7 +89,7 @@ const XtremeExcellence = () => {
             <Link>
                 <img
                   css={imgtop}
-                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/PSX_20190403_000714-scaled.jpg"
                 ></img>
             </Link>
             <div
@@ -140,7 +140,7 @@ const XtremeExcellence = () => {
             <Link>
                 <img
                   css={imgtop}
-                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/salkantay-54.jpeg"
                 ></img>
             </Link>
             <div
@@ -191,7 +191,7 @@ const XtremeExcellence = () => {
             <Link>
                 <img
                   css={imgtop}
-                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/WhatsApp-Image-2019-05-06-at-12.30.33.jpeg"
+                  src="https://www.x-tremetourbulencia.com/wp-content/uploads/2022/04/salkantay-trek-1.webp"
                 ></img>
             </Link>
             <div
@@ -310,8 +310,9 @@ let imgtop = css`
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
+  max-height: 250px;
 `;
 let title = css``;
 let text = css`
@@ -332,11 +333,16 @@ let button = css`
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  background-color: rgba(4, 120, 87, 1);
+  background-color: #008B39;
   border-color: rgba(255, 255, 255, 1);
   border-width: 4px;
   border-radius: 0.5rem;
   border-style: solid;
   align-items: center;
   display: inline-flex;
+  :hover{
+    background-color: #fff;
+    border-color: #008B39;
+    color: #008B39;
+  }
 `;

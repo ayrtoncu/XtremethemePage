@@ -67,7 +67,7 @@ const ContentChoose = styled.div`
   z-index: 2;
   margin-top: 0;
   padding-top: 40px !important;
-  width: 100%;
+  width: 90%;
   margin: auto;
   padding-bottom: 0;
   h2 {
@@ -82,7 +82,7 @@ const ContentChoose = styled.div`
     margin-bottom: 5px;
     padding-bottom: 20px;
   }
-  @media (min-width:780px){
+  @media (min-width:1020px){
     width: 960px;
   }
 `;

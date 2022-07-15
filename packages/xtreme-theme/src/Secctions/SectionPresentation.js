@@ -61,7 +61,7 @@ const Section = styled.div`
 const ContentText = styled.div`
   text-align: center;
   margin-top: 0;
-  width: 100%;
+  width: 90%;
   padding-bottom: 0;
   margin: auto;
   h2 {
@@ -73,7 +73,7 @@ const ContentText = styled.div`
     text-transform: uppercase;
     letter-spacing: 0;
   }
-  @media (min-width:780px){
+  @media (min-width:1020px){
     width: 960px;
   }
 `;

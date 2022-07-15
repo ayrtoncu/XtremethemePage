@@ -570,7 +570,7 @@ const MobileIcon = styled.div`
     align-items: center;
     cursor: pointer;
     margin-left: 20px;
-    width: 25px;
+    width: 25px;| 
     float: left;
     transition: all 0.2s ease;
     margin-top: 20px;
@@ -584,7 +584,7 @@ const NavMenu = styled.ul`
   margin: 0;
   margin-bottom:0;
   float: right;
-  @media (max-width: 770px){
+  @media (max-width: 1000px){
     display: none;
   }
   li{
