@@ -100,7 +100,6 @@ const SocialXtreme = () => {
 export default connect(SocialXtreme);
 
 const Section = styled.div`
-  border-top: 1px solid #e1e1e1;
   padding: 30px 0 30px 0;
   float: left;
   width: 100%;
@@ -110,9 +109,15 @@ const Section = styled.div`
 const ContainerSocial = styled.div`
   padding-bottom: 2.5rem;
   max-width: 100%;
-  width: 100%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
+  @media(min-width: 768px){
+    width: 90%;
+  }
+  @media(min-width: 1024px){
+    width: 80%;
+  }
 `;
 const ContainerSocialGrid = styled.div`
   gap:1rem;

@@ -137,15 +137,16 @@ margin-top:40px;
   margin-right: auto;
 `;
 const ItemTour = styled.div`
-  padding: 0.2rem;
+  padding: 0.15rem;
   width: 100%;
+  border-radius: 10px;
   @media(min-width:768px){
     width: 33.3%;
-    padding: 0.15rem;
+    padding: 0.3rem;
   }
   @media(min-width:1024px){
     width: 20%;
-    padding: 0.15rem;
+    padding: 0.5rem;
   }
 `;
 //class
@@ -155,6 +156,7 @@ let boxEspecial = css`
   background: #000;
   position: relative;
   background: rgba(0, 0, 0, 1);
+  border-radius: 10px;
   :hover #titleSpecial1 {
     top: 31%;
   }

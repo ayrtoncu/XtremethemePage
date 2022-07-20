@@ -2,7 +2,7 @@ import React from "react";
 import { Global, connect, css, styled } from "frontity";
 import Link from "@frontity/components/link";
 import menubar from "../Icons/326672_menu_icon.svg";
-import logoblanco from "../assets/imgs/logos/Logo Blanco.png";
+import logoblanco from "../assets/imgs/logos/LogoCompletosinfondos.png";
 const Navbar = () => {
   return (
     <>
@@ -570,7 +570,7 @@ const MobileIcon = styled.div`
     align-items: center;
     cursor: pointer;
     margin-left: 20px;
-    width: 25px;| 
+    width: 25px;
     float: left;
     transition: all 0.2s ease;
     margin-top: 20px;

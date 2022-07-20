@@ -135,7 +135,6 @@ const SectionOffers = () => {
   );
 };
 const SectionTourPadding = styled.div`
-  border-top: 1px solid #e1e1e1;
   padding: 60px 0 60px 0;
   padding-bottom: 0px;
   float: left;

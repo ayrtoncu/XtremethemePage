@@ -51,7 +51,6 @@ const PresentatioSection = () => {
   );
 };
 const Section = styled.div`
-  border-top: 1px solid #e1e1e1;
   padding: 60px 0 30px 0;
   float: left;
   width: 100%;

@@ -10,6 +10,7 @@ import XtremeExcellence from "./XtremeExcellence";
 import Certifications from "./CertificationsSection";
 import DayliTours from "./DayliTours";
 import SocialXtreme from "./SocialXtreme";
+import AlternativeTreks from "./AlternativeTreks";
 
 
 const Wrapper = () => {
@@ -22,7 +23,8 @@ const Wrapper = () => {
         <XtremeExcellence />
         <SectionOffers />
         <SocialXtreme/>
-        <DayliTours/>
+        <DayliTours />
+        <AlternativeTreks/>
         <Certifications/>
         <FooterSecction />
       </PpbWrapper>
