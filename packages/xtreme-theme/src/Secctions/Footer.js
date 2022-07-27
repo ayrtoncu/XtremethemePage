@@ -96,6 +96,7 @@ const FooterBar = styled.div`
   background: #ffffff;
   width: 100%;
   min-height: 50px;
+  .3
   margin: auto;
   padding: 0 0 5px 0;
   float: left;
@@ -103,9 +104,9 @@ const FooterBar = styled.div`
 const Footer = styled.div`
   width: 100%;
   padding-top: 20px;
-  color: #cccccc;
+  color: #fff;
   float: left;
-  background: #000;
+  background: #004B30;
   @media (min-width: 768px;) {
     padding-bottom: 0;
   }

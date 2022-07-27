@@ -130,15 +130,17 @@ const ContentText = styled.div`
   }
 `;
 const ContentDayliTours = styled.div`
-margin-top:40px;
+  margin-top:40px;
   flex-wrap: wrap;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  align-items: center;
 `;
 const ItemTour = styled.div`
   padding: 0.15rem;
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
   @media(min-width:768px){
     width: 33.3%;
@@ -153,10 +155,10 @@ const ItemTour = styled.div`
 let boxEspecial = css`
   width: 100%;
   overflow: hidden;
-  background: #000;
   position: relative;
   background: rgba(0, 0, 0, 1);
   border-radius: 10px;
+  height: 450px;
   :hover #titleSpecial1 {
     top: 31%;
   }
@@ -164,13 +166,23 @@ let boxEspecial = css`
     opacity: 1;
     top: 50%;
   }
+  @media(min-width: 768px){
+    height: 350px;
+  }
+  @media(min-width: 1024px){
+    height: 350px;
+  }
+  @media(min-width: 1440px){
+    height: 450px;
+  }
 `;
 let backimg = css`
   opacity: 0.75;
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: all 0.3s ease;
+  object-fit: cover;
 `;
 let titleSpecial = css`
   position: absolute;
@@ -184,6 +196,13 @@ let titleSpecial = css`
   text-shadow: 1px 1px 2px #000;
   line-height: 40px;
   transition:.3s;
+  @media(min-width: 768px){
+    font-size: 1.5rem;
+  }
+
+  @media(min-width: 1440px){
+    font-size: 2.1rem;
+  }
 `;
 let titleMore = css`
   position: absolute;
@@ -201,8 +220,8 @@ let titleMore = css`
 let btn = css`
 transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 color:#fff;
-background-color:#28a745;
-border-color:#28a745;
+background-color:#008B39;
+border-color:#008B39;
 padding:.5rem 1rem;
 font-size:1.25rem;
 line-height:1.5;

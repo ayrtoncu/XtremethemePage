@@ -1,6 +1,6 @@
 import { Global, connect, css,styled  } from "frontity";
 import React from 'react';
-import banner from '../assets/imgs/banner/machupicchu.jpg'
+import banner from '../assets/imgs/banner/Salkantaybanner.jpg'
 
 const SliderBanner = () => {
   return (

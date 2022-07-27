@@ -2,7 +2,7 @@ import React from "react";
 import { Global, connect, css, styled } from "frontity";
 import Link from "@frontity/components/link";
 import menubar from "../Icons/326672_menu_icon.svg";
-import logoblanco from "../assets/imgs/logos/LogoCompletosinfondos.png";
+import logoblanco from "../assets/imgs/logos/Logo Blanco.png";
 const Navbar = () => {
   return (
     <>
@@ -537,7 +537,7 @@ const logoWrapper = css`
   }
   @media (max-width: 425px) {
     img {
-      width: 100px !important;
+      width: 150px !important;
     }
   }
   img {
@@ -616,13 +616,15 @@ const NavMenu = styled.ul`
       list-style:none;
       position: absolute;
       padding: 0;
-      width: 210px;
-      margin: 0;
+      width:  210px;
       margin-top: 0px!important;
-      margin-left:0;
+      margin-left:auto !important;
+      margin-right: auto !important;
+      right: 0;
+      left: 0;
       z-index:99999;
       float:right;
-      background:rgba(34, 34, 34, 1);
+      background:rgba(256, 256, 256, 0) ;
       li{
         clear: both;
         width:100%;
@@ -634,7 +636,7 @@ const NavMenu = styled.ul`
         a{
           letter-spacing:0px;
           font-weight:700;
-          color: #cccccc !important;
+          color: #fff !important;
           text-transform: none;
           font-size: 12px;
           width 170px;
@@ -643,7 +645,7 @@ const NavMenu = styled.ul`
           border: 0;
           margin: 0;
           padding:7px 20px 7px 20px;
-          border-bottom: 1px solid #444;
+          border-bottom: 1px solid #fff;
           background:transparent;
           height: auto;
           text-decoration: none!important;
@@ -697,7 +699,7 @@ let top_bar = css`
   padding: 0;
   width: 100%;
   float: left;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
   position: relative;
   z-index: 8;
