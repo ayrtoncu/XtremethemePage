@@ -618,10 +618,10 @@ const NavMenu = styled.ul`
       padding: 0;
       width:  210px;
       margin-top: 0px!important;
-      margin-left:auto !important;
-      margin-right: auto !important;
-      right: 0;
-      left: 0;
+      // margin-left:auto !important;
+      // margin-right: auto !important;
+      // right: 0;
+      // left: 0;
       z-index:99999;
       float:right;
       background:rgba(256, 256, 256, 0) ;

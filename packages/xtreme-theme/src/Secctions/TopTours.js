@@ -252,6 +252,11 @@ let packageCardCLocation = css`
 let packageCardCTitle = css`
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+  -webkit-line-clamp:1!important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: 700;
   color: #333;
 `;

@@ -20,11 +20,11 @@ const Wrapper = () => {
       <PpbWrapper>
         <PresentatioSection />
         <WhyChoose />
+        <AlternativeTreks/>
         <XtremeExcellence />
         <SectionOffers />
         <SocialXtreme/>
         <DayliTours />
-        <AlternativeTreks/>
         <Certifications/>
         <FooterSecction />
       </PpbWrapper>

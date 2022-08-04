@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentText  from './componentsStyles'
-const TextSection = (props) => {
+const TextSection = ({title,props}) => {
   return (
     <ContentText>
       <h2>

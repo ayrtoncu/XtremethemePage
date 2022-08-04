@@ -134,10 +134,14 @@ const ContainerContent = styled.div`
   position: relative;
   margin-top: 40px;
   @media (min-width: 768px) {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   @media (min-width: 1020px) {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (min-width: 1440px) {
     grid-template-rows: repeat(1, minmax(0, 1fr));
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
