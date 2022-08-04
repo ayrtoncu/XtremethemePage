@@ -7,6 +7,7 @@ import cuscobanner from "../assets/imgs/banner/bannerCusco.jpg";
 const Page = ({ state, styled }) => {
   const data = state.source.get(state.router.link);
   const page = state.source[data.type][data.id];
+  console.log(page);
   const [imagebanner, setimagebanner] = React.useState("");
   const image = page.featured_img;
   console.log(image);
