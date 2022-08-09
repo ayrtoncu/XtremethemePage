@@ -11,6 +11,7 @@ import Certifications from "./CertificationsSection";
 import DayliTours from "./DayliTours";
 import SocialXtreme from "./SocialXtreme";
 import AlternativeTreks from "./AlternativeTreks";
+import TripadvisorReviews from "./Tripadvisor";
 
 
 const Wrapper = () => {
@@ -25,8 +26,10 @@ const Wrapper = () => {
         <SectionOffers />
         <SocialXtreme/>
         <DayliTours />
+        <TripadvisorReviews/>
         <Certifications/>
         <FooterSecction />
+        
       </PpbWrapper>
 
     </>
