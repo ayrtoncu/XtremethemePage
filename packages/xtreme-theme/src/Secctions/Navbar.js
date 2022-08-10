@@ -1,16 +1,14 @@
 import React from "react";
 import { Global, connect, css, styled } from "frontity";
 import Link from "@frontity/components/link";
-import menubar from "../Icons/326672_menu_icon.svg";
 import logoblanco from "../assets/imgs/logos/Logo Blanco.png";
+import SidebarMovil from "./SidebarMovil";
 const Navbar = () => {
   return (
     <>
       <HeaderWrapper className="header_style_wrapper">
         <div className="top_bar hasbg " css={top_bar}>
-          <MobileIcon id="mobile_nav_icon">
-            <img src={menubar} />
-          </MobileIcon>
+          <SidebarMovil/>
           <MenuWrapper id="menu_wrapper">
             {/*            <a
               id="custom_logo"

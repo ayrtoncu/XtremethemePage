@@ -26,10 +26,8 @@ const Wrapper = () => {
         <SectionOffers />
         <SocialXtreme/>
         <DayliTours />
-        <TripadvisorReviews/>
         <Certifications/>
         <FooterSecction />
-        
       </PpbWrapper>
 
     </>
