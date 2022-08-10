@@ -1,6 +1,6 @@
-import { connect, styled,css } from 'frontity';
-import React, { useState } from 'react';
-import Link from '@frontity/components/link';
+import { connect, styled, css } from "frontity";
+import React, { useState } from "react";
+import Link from "@frontity/components/link";
 
 const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
@@ -9,19 +9,31 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <Link css={sidebarLink} link={item.path}
-        // onClick={item.subNav && showSubnav}
+      <Link
+        css={sidebarLink}
+        link={item.path}
+        onClick={item.subNav && showSubnav}
       >
         <div>
           {/* {item.icon} */}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
         <div>
-          {/* {item.subNav && subnav
+          {/* {item.subNav && subnav ? item.iconOpened : item.subNav} */}
+          {item.subNav && subnav
             ? item.iconOpened
             : item.subNav
             ? item.iconClosed
-            : null} */}
+            : null}
+          {subnav &&
+            item.subNav.map((item, index) => {
+              return (
+                <Link css={dropdownLink} link={item.path} key={index}>
+                  {/* {item.icon} */}
+                  <SidebarLabel>{item.title}</SidebarLabel>
+                </Link>
+              );
+            })}
         </div>
       </Link>
     </>

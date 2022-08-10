@@ -7,8 +7,8 @@ const SidebarData = [
     title: 'Overview',
     path: '/overview',
     // icon: <AiIcons.AiFillHome />,
-    iconClosed: {iconClose},
-    iconOpened: {iconOpen},
+    iconClosed: <iconClose/>,
+    iconOpened: <iconOpen/>,
     subNav: [
       {
         title: 'Users',
@@ -26,8 +26,8 @@ const SidebarData = [
     title: 'Reports',
     path: '/reports',
     // icon: <IoIcons.IoIosPaper />,
-    iconClosed: {iconClose},
-    iconOpened: {iconOpen},
+    iconClosed: <iconClose/>,
+    iconOpened: <iconOpen/>,
 
     subNav: [
       {
@@ -64,8 +64,8 @@ const SidebarData = [
     path: '/messages',
     // icon: <FaIcons.FaEnvelopeOpenText />,
 
-    iconClosed: {iconClose},
-    iconOpened: {iconOpen},
+    iconClosed: <iconClose/>,
+    iconOpened: <iconOpen/>,
 
     subNav: [
       {
