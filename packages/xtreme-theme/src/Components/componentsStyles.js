@@ -34,3 +34,9 @@ export const ContentText = styled.div`
     width: 960px;
   }
 `;
+export const SpaceMaintop = styled.div`
+  margin-top: 80vh;
+  position: absolute;
+  width: 100%;
+  left: 0;
+`;

@@ -10,6 +10,7 @@ const SidebarMovil = () => {
   let data = [];
   const showSidebar = () => {
     setSidebar(!sidebar);
+    console.log(SidebarData)
   };
 
   return (
@@ -50,13 +51,14 @@ const MobileIconClose = styled.div`
   display: none;
   margin-left: 2rem;
   font-size: 2rem;
-  height: 80px;
+  margin-top: 10px;
+  height: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 `;
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background: #ffffff;
   width: 100%;
   height: 100vh;
   display: flex;
