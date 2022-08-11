@@ -18,28 +18,32 @@ const SubMenu = ({ item }) => {
           {/* {item.icon} */}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
+
         <div>
-          {/* {item.subNav && subnav ? item.iconOpened : item.subNav} */}
           {item.subNav && subnav
             ? item.iconOpened
             : item.subNav
             ? item.iconClosed
             : null}
-          {subnav &&
-            item.subNav.map((item, index) => {
-              return (
-                <Link css={dropdownLink} link={item.path} key={index}>
-                  {/* {item.icon} */}
-                  <SidebarLabel>{item.title}</SidebarLabel>
-                </Link>
-              );
-            })}
         </div>
       </Link>
+
+      {subnav &&
+        item.subNav.map((item, index) => {
+          return (
+            <Link css={dropdownLink} link={item.path} key={index}>
+              {/* {item.icon} */}
+              <SidebarLabel>{item.title}</SidebarLabel>
+            </Link>
+          );
+        })}
     </>
   );
 };
-export default connect(SubMenu);
+export default SubMenu;
+const SidebarLabel = styled.span`
+  margin-left: 16px;
+`;
 let sidebarLink = css`
   display: flex;
   color: #e1e9fc;
@@ -56,10 +60,6 @@ let sidebarLink = css`
     border-left: 4px solid #632ce4;
     cursor: pointer;
   }
-`;
-
-const SidebarLabel = styled.span`
-  margin-left: 16px;
 `;
 
 let dropdownLink = css`

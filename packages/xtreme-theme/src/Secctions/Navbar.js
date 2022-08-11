@@ -10,13 +10,6 @@ const Navbar = () => {
         <div className="top_bar hasbg " css={top_bar}>
           <SidebarMovil/>
           <MenuWrapper id="menu_wrapper">
-            {/*            <a
-              id="custom_logo"
-              className="logo_wrapper hidden"
-              href="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png"
-            >
-              <img src="https://www.x-tremetourbulencia.com/wp-content/themes/xtreme_tourbulencia/img/logo-xtreme.png" alt="" width="69" height="33" />
-            </a>*/}
             <Link
               link="/"
               css={logoWrapper}

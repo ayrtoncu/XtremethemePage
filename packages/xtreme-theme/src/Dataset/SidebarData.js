@@ -2,13 +2,24 @@ import { connect } from 'frontity'
 import React from 'react';
 import iconOpen from '../Icons/menuicons/expand_more_white_24dp.svg';
 import iconClose from '../Icons/menuicons/expand_less_white_24dp.svg';
+
+const IconClose = () => {
+  return (
+    <img src={ iconClose} />
+  )
+}
+const IconOpen = () => {
+  return (
+    <img src={ iconOpen} />
+  )
+}
 const SidebarData = [
   {
     title: 'Overview',
     path: '/overview',
     // icon: <AiIcons.AiFillHome />,
-    iconClosed: <iconClose/>,
-    iconOpened: <iconOpen/>,
+    iconClosed: <IconClose/>,
+    iconOpened: <IconOpen/>,
     subNav: [
       {
         title: 'Users',
@@ -26,8 +37,8 @@ const SidebarData = [
     title: 'Reports',
     path: '/reports',
     // icon: <IoIcons.IoIosPaper />,
-    iconClosed: <iconClose/>,
-    iconOpened: <iconOpen/>,
+    iconClosed: <IconClose/>,
+    iconOpened: <IconOpen/>,
 
     subNav: [
       {
@@ -64,8 +75,8 @@ const SidebarData = [
     path: '/messages',
     // icon: <FaIcons.FaEnvelopeOpenText />,
 
-    iconClosed: <iconClose/>,
-    iconOpened: <iconOpen/>,
+    iconClosed: <IconClose/>,
+    iconOpened: <IconOpen/>,
 
     subNav: [
       {

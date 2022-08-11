@@ -7,15 +7,9 @@ import SubMenu from "../Components/SubmenuSlider";
 
 const SidebarMovil = () => {
   const [sidebar, setSidebar] = useState(false);
-  let data=[];
+  let data = [];
   const showSidebar = () => {
     setSidebar(!sidebar);
-    // SidebarData.map(function (obj) {
-    //   var robj = {};
-    //   robj[obj.title] = obj.path;
-    //   console.log(robj) ;
-    // });
-    console.log(SidebarData);
   };
 
   return (
@@ -29,14 +23,9 @@ const SidebarMovil = () => {
             <img src={closemenu}></img>
           </MobileIconClose>
           {/* data */}
-          {/* {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })} */}
-          {SidebarData.map(function (item,index) {
-            console.log(item,index);
-            return <SubMenu item={item} key={index} />
-          })
-          }
+          {SidebarData.map(function (item, index) {
+            return <SubMenu item={item} key={index} />;
+          })}
         </SidebarWrap>
       </SidebarNav>
     </div>
@@ -59,16 +48,12 @@ const MobileIconOpen = styled.div`
 `;
 const MobileIconClose = styled.div`
   display: none;
-  @media (max-width: 960px) {
-    display: block;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 20px;
-    width: 25px;
-    float: left;
-    transition: all 0.2s ease;
-    margin-top: 20px;
-  }
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 const SidebarNav = styled.nav`
   background: #15171c;
