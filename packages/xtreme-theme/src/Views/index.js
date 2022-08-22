@@ -17,7 +17,7 @@ const Root = ({ state, actions }) => {
         <Navbar />
       </header>
       <Switch>
-        <Post when={data.isPost} />
+        <Post when={data.isTrip} />
         <Page when={data.isPage} />
         <Home when={data.isHome} />
       </Switch>

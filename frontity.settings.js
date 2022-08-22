@@ -2,7 +2,7 @@ const settings = {
   "name": "xtreme",
   "state": {
     "frontity": {
-      "url": "https://www.x-tremetourbulencia.com/",
+      "url": "https://xtremecusco.com/",
       "title": "Xtreme Tourbulencia",
       "description": "Xtreme Tourism Agency"
     }
@@ -17,7 +17,14 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://www.x-tremetourbulencia.com/"
+          "url": "https://xtremecusco.com/",
+          "postTypes": [
+            {
+              type: "trip",
+              endpoint: "trip",
+              archive: "/trips"
+            }
+          ]
         }
       }
     },
