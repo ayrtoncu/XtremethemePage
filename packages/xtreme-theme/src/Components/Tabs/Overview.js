@@ -1,4 +1,4 @@
-import { connect } from 'frontity';
+import { connect, styled } from 'frontity';
 import React from 'react'
 
 const Overview = ({overviewData}) => {
@@ -7,3 +7,4 @@ const Overview = ({overviewData}) => {
   );
 }
 export default connect(Overview)
+

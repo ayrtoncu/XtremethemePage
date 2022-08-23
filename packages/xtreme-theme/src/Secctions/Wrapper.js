@@ -29,7 +29,6 @@ const Wrapper = () => {
         <Certifications/>
         <FooterSecction />
       </PpbWrapper>
-
     </>
   );
 };
