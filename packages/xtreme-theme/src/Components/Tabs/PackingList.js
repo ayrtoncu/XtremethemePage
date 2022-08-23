@@ -1,9 +1,9 @@
 import { connect } from 'frontity';
 import React from 'react'
 
-const PackingList = ({packingListData}) => {
+const PackingList = ({ packingListData }) => {
   return (
-    <div></div>
+    <div dangerouslySetInnerHTML={{ __html: packingListData }}></div>
   );
 }
 

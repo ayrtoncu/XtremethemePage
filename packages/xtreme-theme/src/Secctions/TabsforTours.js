@@ -5,6 +5,7 @@ import Overview from "../Components/Tabs/Overview";
 import ItIncludes from "../Components/Tabs/ItIncludes";
 import Itinerary from "../Components/Tabs/Itinerary";
 import TravelInfo from "../Components/Tabs/TravelInfo";
+import PackingList from "../Components/Tabs/PackingList";
 
 const TabsforTours = ({data}) => {
   const [toggleState, setToggleState] = useState(1);
@@ -23,6 +24,7 @@ const TabsforTours = ({data}) => {
           <button onClick={() => toggleTab(2)}>Itinerary</button>
           <button onClick={() => toggleTab(3)}>It Includes</button>
           <button onClick={() => toggleTab(4)}>Travel Info</button>
+          <button onClick={() => toggleTab(5)}>Packing List</button>
         </div>
         <div css={toggleState === 1 ? tabContentActive : tabContent}>
           <Overview overviewData={data.overview}/>
@@ -35,6 +37,9 @@ const TabsforTours = ({data}) => {
         </div>
         <div css={toggleState === 4 ? tabContentActive : tabContent}>
           <TravelInfo travelData={data.travel_info}/>
+        </div>
+        <div css={toggleState === 5 ? tabContentActive : tabContent}>
+          <PackingList packingListData={data.packing_list}/>
         </div>
       </Container>
     </Sectiondiv>
