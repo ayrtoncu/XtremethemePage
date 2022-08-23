@@ -6,8 +6,6 @@ import Navbar from "../Secctions/Navbar";
 import Post from "./post";
 import Page from "./Page.js";
 import Home from "./Home.js";
-import theme from "../css/theme.css";
-import styles from "../css/style.css";
 
 const Root = ({ state, actions }) => {
   const data = state.source.get(state.router.link);
@@ -22,8 +20,6 @@ const Root = ({ state, actions }) => {
         <Home when={data.isHome} />
       </Switch>
       <Global styles={globalStyles} />
-      <Global styles={css(theme)} />
-      <Global styles={css(styles)} />
       <Script
         code={`
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
