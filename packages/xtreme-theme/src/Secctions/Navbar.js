@@ -76,7 +76,7 @@ const Navbar = () => {
                             </Link>
                           </li>
                           <li className="menu-item">
-                            <Link link="/inca-trail-trek-machu-picchu-4days/">
+                            <Link link="/trip/inca-trail-to-machu-picchu-4-days">
                               <span>
                                 Inca Trail To MachuPicchu 4 Days Classic
                               </span>

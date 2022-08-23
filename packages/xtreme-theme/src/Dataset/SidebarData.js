@@ -25,7 +25,7 @@ const SidebarData = [
       },
       {
         title: 'Inca Trail to Machu Picchu 4 Days',
-        path:'/inca-trail-trek-machu-picchu-4days',
+        path:'/trip/inca-trail-to-machu-picchu-4-days',
       },
       {
         title: 'Salkantay Trek - Inca Trail Machu Picchu 6 Days',
