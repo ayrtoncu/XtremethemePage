@@ -1,9 +1,12 @@
 import { connect } from 'frontity'
 import React from 'react'
 
-const Itinerary = ({itineraryData}) => {
+const Itinerary = ({ itineraryData }) => {
+  console.log(itineraryData[0])
   return (
-    <div></div>
+    <>
+      {/* <div dangerouslySetInnerHTML={{ __html: itineraryData }}></div> */}
+    </>
   )
 }
 
