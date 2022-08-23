@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import { connect, styled,css } from "frontity";
 import { Sectiondiv, Container } from "../Components/componentsStyles";
+import Overview from "../Components/Tabs/Overview";
+import ItIncludes from "../Components/Tabs/ItIncludes";
 
 const TabsforTours = ({data}) => {
   const [toggleState, setToggleState] = useState(1);
@@ -8,22 +10,22 @@ const TabsforTours = ({data}) => {
     setToggleState(index);
   }
   // console.log(typeof (data))
-  console.log(Object.keys(data))
-  data=['overview','itinerario','includes','travel_info','packing_list ']
+  console.log(typeof( data.overview))
+  // titles=['overview','itinerario','includes','travel_info','packing_list ']
   // console.log(data.itinerario)
   return (
     <Sectiondiv>
       <Container>
         <div className="tab">
-          <button onClick={() => toggleTab(1)}>hoja 1 </button>
-          <button onClick={() => toggleTab(2)}>hoja 2</button>
+          <button onClick={() => toggleTab(1)}>Overview </button>
+          <button onClick={() => toggleTab(2)}>It Includes</button>
           <button onClick={() => toggleTab(3)}>hoja 3</button>
         </div>
         <div css={toggleState === 1 ? tabContentActive : tabContent}>
-          <p>hola mundo 1 </p>
+          <Overview overviewData={data.overview}/>
         </div>
         <div css={toggleState === 2 ? tabContentActive : tabContent}>
-          <p>hola mundo 2</p>
+          <ItIncludes itIncludesData={data.it_includes}/>
         </div>
         <div css={toggleState === 3 ? tabContentActive : tabContent}>
           <p>hola mundo 3</p>
