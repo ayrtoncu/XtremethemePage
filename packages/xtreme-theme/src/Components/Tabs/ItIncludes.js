@@ -2,10 +2,11 @@ import { connect } from 'frontity'
 import React from 'react'
 
 const ItIncludes = ({ itIncludesData }) => {
-  console.log(itIncludesData)
+  console.log(itIncludesData.excludes)
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: itIncludesData }}></div>
+      <div dangerouslySetInnerHTML={{ __html: itIncludesData.excludes }}></div>
+      {/* <div>{ itIncludesData.excludes}</div> */}
     </>
   )
 }
