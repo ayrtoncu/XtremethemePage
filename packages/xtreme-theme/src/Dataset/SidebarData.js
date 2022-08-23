@@ -52,7 +52,7 @@ const SidebarData = [
     subNav: [
       {
         title: 'Humantay Lake',
-        path: '/humantay-lake-1-day/',
+        path: '/trip/humantay-lake-1-day/',
       },
       {
         title: 'The Rainbow Mountain',
