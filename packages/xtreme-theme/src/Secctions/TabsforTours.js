@@ -19,13 +19,13 @@ const TabsforTours = ({data}) => {
   return (
     <Sectiondiv>
       <Container>
-        <div className="tab">
-          <button onClick={() => toggleTab(1)}>Overview </button>
-          <button onClick={() => toggleTab(2)}>Itinerary</button>
-          <button onClick={() => toggleTab(3)}>It Includes</button>
-          <button onClick={() => toggleTab(4)}>Travel Info</button>
-          <button onClick={() => toggleTab(5)}>Packing List</button>
-        </div>
+        <Tabs>
+          <TabsItem css={toggleState === 1 ? tabsitemactive:null } onClick={() => toggleTab(1)}>Overview </TabsItem>
+          <TabsItem css={toggleState === 2 ? tabsitemactive:null } onClick={() => toggleTab(2)}>Itinerary</TabsItem>
+          <TabsItem css={toggleState === 3 ? tabsitemactive:null } onClick={() => toggleTab(3)}>It Includes</TabsItem>
+          <TabsItem css={toggleState === 4 ? tabsitemactive:null } onClick={() => toggleTab(4)}>Travel Info</TabsItem>
+          <TabsItem css={toggleState === 5 ? tabsitemactive:null } onClick={() => toggleTab(5)}>Packing List</TabsItem>
+        </Tabs>
         <div css={toggleState === 1 ? tabContentActive : tabContent}>
           <Overview overviewData={data.overview}/>
         </div>
@@ -47,13 +47,44 @@ const TabsforTours = ({data}) => {
 };
 export default connect(TabsforTours);
 
+const Tabs = styled.div`
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+`;
+const TabsItem = styled.button`
+  margin-right: 4px;
+  flex: 1 1 auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 2;
+  border: solid 2px #008B39;
+  background-color: #ffffff;
+  color:#212605;
+  font-weight:600;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+`;
+let tabsitemactive = css`
+  background-color: #008B39;
+  color: #ffffff;
+`;
+
 let tabContent = css`
+display: none;
+
+`;
+let tabContentActive = css`
 background: white;
 padding: 20px;
 width: 100%;
 height: 100%;
-display: none;
-`;
-let tabContentActive = css`
 display: block;
+border:1px solid #d5d5d5;
+border-radius:10px;
+padding:1.5rem;
+transition;
+opacity .15s linear;
 `;
