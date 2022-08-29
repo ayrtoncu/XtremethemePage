@@ -10,7 +10,7 @@ const SidebarMovil = () => {
   let data = [];
   const showSidebar = () => {
     setSidebar(!sidebar);
-    console.log(SidebarData)
+    // console.log(SidebarData)
   };
 
   return (

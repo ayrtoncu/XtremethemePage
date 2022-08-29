@@ -8,9 +8,9 @@ import TabsforTours from "../Secctions/TabsforTours";
 import { SpaceMaintop } from "../Components/componentsStyles";
 const Post = ({ state }) => {
   const data = state.source.get(state.router.link);
-  console.log(data);
+  // console.log(data);
   const post = state.source[data.type][data.id];
-  console.log(post)
+  // console.log(post)
   //const formattedDate = dayjs (post.date).format("DD MMMM YYYY")
 
   return (

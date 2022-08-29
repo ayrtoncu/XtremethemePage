@@ -13,7 +13,7 @@ const TabsforTours = ({data}) => {
     setToggleState(index);
   }
   // console.log(typeof (data))
-  console.log(typeof( data.overview))
+  // console.log(typeof( data.overview))
   // titles=['overview','itinerario','includes','travel_info','packing_list ']
   // console.log(data.itinerario)
   return (
