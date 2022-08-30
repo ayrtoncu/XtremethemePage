@@ -8,7 +8,6 @@ const Itinerary = ({ itineraryData }) => {
   return (
     <>
       {itineraryData.map(function (dayitinerario, index) {
-        console.log(dayitinerario);
         return <Slider dataDayItinerary={dayitinerario} />;
       })}
     </>
