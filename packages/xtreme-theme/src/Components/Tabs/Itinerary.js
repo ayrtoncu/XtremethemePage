@@ -1,14 +1,14 @@
 import { connect, css, styled } from "frontity";
 import React, { useState } from "react";
-import iconOpen from "../../Icons/menuicons/expand_more_white_24dp.svg";
-import iconClose from "../../Icons/menuicons/expand_less_white_24dp.svg";
+import iconOpen from "../../Icons/menuicons/expand_more_black_24dp.svg";
+import iconClose from "../../Icons/menuicons/expand_less_black_24dp.svg";
 
 const Itinerary = ({ itineraryData }) => {
   // console.log(itineraryData);
   return (
     <>
       {itineraryData.map(function (dayitinerario, index) {
-        return <Slider dataDayItinerary={dayitinerario} />;
+        return <Slider key={index} dataDayItinerary={dayitinerario} />;
       })}
     </>
   );
@@ -30,9 +30,9 @@ const Slider = ({ dataDayItinerary }) => {
         </div>
         <div>
           {dataDayItinerary.itinerario_content && subnav
-            ? <IconClose/>
-            : dataDayItinerary.itinerario_content
             ? <IconOpen/>
+            : dataDayItinerary.itinerario_content
+            ? <IconClose/>
             : null}
         </div>
       </div>
@@ -56,6 +56,10 @@ const IconOpen = () => {
 
 const SidebarLabel = styled.span`
   margin-left: 16px;
+  -webkit-line-clamp: 2!important;
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 `;
 let sidebarLink = css`
   background-color: #fff;
