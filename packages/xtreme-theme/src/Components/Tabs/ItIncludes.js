@@ -3,7 +3,6 @@ import React from "react";
 import radioicon from '../../assets/icons/radio_button.svg'
 
 const ItIncludes = ({ itIncludesData }) => {
-  console.log(itIncludesData);
   return (
     <IncludeContent>
       <Includes includes={itIncludesData.includes} />
