@@ -12,12 +12,15 @@ import DayliTours from "./DayliTours";
 import SocialXtreme from "./SocialXtreme";
 import AlternativeTreks from "./AlternativeTreks";
 import TripadvisorReviews from "./Tripadvisor";
+import MobileWrap from "./MobileWrap";
+import GdrlCoreWrapper from "./GdrlCoreWrapper";
 
 
 const Wrapper = () => {
   return (
     <>
-      <SliderBanner />
+      <GdrlCoreWrapper/>
+      {/* <SliderBanner /> */}
       <PpbWrapper>
         <PresentatioSection />
         <WhyChoose />
@@ -33,7 +36,6 @@ const Wrapper = () => {
   );
 };
 const PpbWrapper = styled.div`
-  margin-top: 100vh;
   position: absolute;
   width: 100%;
   left: 0;

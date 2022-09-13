@@ -6,6 +6,7 @@ import Navbar from "../Secctions/Navbar";
 import Post from "./post";
 import Page from "./Page.js";
 import Home from "./Home.js";
+import MobileWrap from "../Secctions/MobileWrap";
 
 const Root = ({ state, actions }) => {
   const data = state.source.get(state.router.link);
@@ -13,6 +14,7 @@ const Root = ({ state, actions }) => {
     <>
       <header>
         <Navbar />
+        <MobileWrap/>
       </header>
       <Switch>
         <Post when={data.isTrip} />
@@ -41,6 +43,8 @@ export default connect(Root);
 const globalStyles = css`
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   body {
     margin: 0;
@@ -56,5 +60,9 @@ const globalStyles = css`
   a:visited {
     color: inherit;
     text-decoration: none;
+  }
+  img{
+    max-width:100%;
+    height:auto;
   }
 `;
