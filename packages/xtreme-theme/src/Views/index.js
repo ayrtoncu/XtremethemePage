@@ -13,7 +13,7 @@ const Root = ({ state, actions }) => {
   return (
     <>
       <header>
-        <Navbar />
+        {/* <Navbar />   */}
         <MobileWrap/>
       </header>
       <Switch>

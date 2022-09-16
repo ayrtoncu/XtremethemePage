@@ -141,6 +141,7 @@ const ServiceTitle = styled.div`
   background: #fff;
   width: 60%;
   margin: 0 auto 15px auto;
+  border-radius: 20px;
   h3 {
     font-size: 16px;
     color: #000 !important;

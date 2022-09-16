@@ -263,6 +263,9 @@ div{
     transition:color 200ms;
     -webkit-transition:color 200ms;
     font-family:"DM Serif Display",serif;
+    @media(max-width: 450px){
+      font-size: 56px;
+    }
   }
 }
 `;

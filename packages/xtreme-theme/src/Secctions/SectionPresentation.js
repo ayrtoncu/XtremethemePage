@@ -25,7 +25,7 @@ const PresentatioSection = () => {
         </h2>
         <div
           css={css`
-          font-size 1.7remM
+          font-size 1.7rem;
           display: block;
           margin-top: 14px;
           font-weight:100;
