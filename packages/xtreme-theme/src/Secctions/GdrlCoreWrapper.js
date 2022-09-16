@@ -69,7 +69,7 @@ const GdrlCoreWrapper = () => {
 
 export default connect(GdrlCoreWrapper);
 const CoreWrapper = styled.div`
-  padding: 180px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
   position: relative;
   @media (max-width: 960px) {
     padding-top: 80px !important;

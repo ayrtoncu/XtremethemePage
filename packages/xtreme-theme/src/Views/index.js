@@ -2,7 +2,7 @@ import React from "react";
 import { connect, Global, css, styled } from "frontity";
 import Switch from "@frontity/components/switch";
 import Script from "@frontity/components/script";
-import Navbar from "../Secctions/Navbar";
+import Navbar2 from "../Secctions/Navbar2";
 import Post from "./post";
 import Page from "./Page.js";
 import Home from "./Home.js";
@@ -13,7 +13,7 @@ const Root = ({ state, actions }) => {
   return (
     <>
       <header>
-        {/* <Navbar />   */}
+        <Navbar2/>  
         <MobileWrap/>
       </header>
       <Switch>
@@ -64,5 +64,8 @@ const globalStyles = css`
   img{
     max-width:100%;
     height:auto;
+  }
+  img, svg{
+    vertical-align: middle;
   }
 `;
