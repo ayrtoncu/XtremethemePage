@@ -1,7 +1,13 @@
-import { styled, connect,css } from 'frontity';
-import Link from "@frontity/components/link"; 
+import { styled, connect, css } from 'frontity';
+import Link from "@frontity/components/link";
 import React from 'react';
-
+import IncaTrail from './Toolbars/IncaTrail';
+import AlternativeTrek from './Toolbars/AlternativeTrek';
+import MachuPicchu from './Toolbars/MachuPicchu';
+import DayliTours from './Toolbars/DayliTours';
+import VacationPackages from './Toolbars/VacationPackages';
+import Manu from './Toolbars/Manu';
+import AboutUs from './Toolbars/AboutUs';
 const MenuToolbar = () => {
   return (
     <MenuBar>
@@ -12,24 +18,31 @@ const MenuToolbar = () => {
               <li>
                 <Link css={navlink}>Inca Trail</Link>
                 <ul>
-                  <div css={containerFlex}>asdasd </div>
+                  <IncaTrail />
                 </ul>
               </li>
               <li>
                 <Link css={navlink}>Alternative Treks</Link>
+                <ul><AlternativeTrek /></ul>
               </li>
               <li>
                 <Link css={navlink}>Machu Picchu</Link>
+                <ul><MachuPicchu /></ul>
               </li>
               <li>
                 <Link css={navlink}>Dayli Tours</Link>
+                <ul><DayliTours /></ul>
               </li>
               <li>
                 <Link css={navlink}>Vacation Packages</Link>
+                <ul><VacationPackages /></ul>
               </li>
               <li>
-                <Link css={navlink}>Manu</Link></li>
-              <li><Link css={navlink}>About US</Link></li>
+                <Link css={navlink}>Manu</Link>
+                <ul><Manu /></ul>
+              </li>
+              <li><Link css={navlink}>About US</Link>
+                <ul><AboutUs /></ul></li>
             </NavbarNav>
           </Collapse>
         </Navbar>
@@ -79,6 +92,7 @@ margin-bottom:0;
 list-style:none;
 li{
   ul{
+    background-color: #f8f8f8;
     padding:1.5rem;
     display: none;
     z-index:1;
@@ -91,17 +105,10 @@ li{
     ul{
       display: block;
     }
-  }
-}
-`;
+  } 
+} 
+`;  
 
-let containerFlex = css`
-justify-content:space-between;
-flex-wrap:wrap;
-max-width:1600px;
-width:100%;
-display:flex; 
-`;
 let navlink = css`
 color:#000 !important;
 text-transform:uppercase;
