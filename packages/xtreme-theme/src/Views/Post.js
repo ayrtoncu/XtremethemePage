@@ -17,7 +17,14 @@ const Post = ({ state }) => {
     <>
       <BannerPage titlepage={post.title.rendered} image={post.featured_img} />
       <SpaceMaintop>
-        <TabsforTours data={post.acf} />
+        <SideBarContainer>
+          <SideBarContent>
+            <TabsforTours data={post.acf} />
+          </SideBarContent>
+          <SideBarRight>
+            asdasdasdasdasdsa
+          </SideBarRight>
+        </SideBarContainer>
         {/* <h3>{post.acf.overview}</h3> */}
         <Main
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
@@ -36,4 +43,28 @@ const Main = styled.div`
   @media (min-width: 1024px) {
     max-width: 980px;
   }
+`;
+const SideBarContainer = styled.div`
+padding-left:15px;
+padding-right: 15px;
+max-width: 1300px;
+zoom: 1;
+line-height:0;
+margin-left:auto;
+margin-right: auto;
+`;
+const SideBarContent = styled.div`
+  padding: 20px 0px 60px 0px;
+  line-height:1.7;
+  position: relative;
+  float: none;
+  display: inline-block;
+  width:66.6666%;
+`;
+const SideBarRight = styled.div`
+padding:40px 0px 30px 0px;
+line-height: 1.7;
+position:relative;
+float:right;
+width:33.3333%;   
 `;

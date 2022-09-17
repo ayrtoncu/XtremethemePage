@@ -18,7 +18,7 @@ const TabsforTours = ({data}) => {
   // console.log(data.itinerario)
   return (
     <Sectiondiv>
-      <Container>
+      <ContentTabs>
         <Tabs>
           <TabsItem css={toggleState === 1 ? tabsitemactive:null } onClick={() => toggleTab(1)}>Overview </TabsItem>
           <TabsItem css={toggleState === 2 ? tabsitemactive:null } onClick={() => toggleTab(2)}>Itinerary</TabsItem>
@@ -41,11 +41,18 @@ const TabsforTours = ({data}) => {
         <div css={toggleState === 5 ? tabContentActive : tabContent}>
           <PackingList packingListData={data.packing_list}/>
         </div>
-      </Container>
+      </ContentTabs>
     </Sectiondiv>
   );
 };
 export default connect(TabsforTours);
+const ContentTabs = styled.div`
+max-width: 100%;
+width: 100%;
+padding-bottom: 2.5rem;
+margin-left: auto;
+margin-right: auto;
+`;
 
 const Tabs = styled.div`
   width: 100%;
