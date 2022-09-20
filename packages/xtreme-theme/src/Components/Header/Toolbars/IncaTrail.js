@@ -29,7 +29,7 @@ const IncaTrail = () => {
       <Column2>
         <Title>INCA TRAIL TO MACHUPICCHU</Title>
         <p css={desciption}>
-        Inca Trail Tours to Machu Picchu, the most emblematic Inca architectural work perched on a hill in a meander of the Urubamba River, accessible to authorized officials of the Empire and the Inca through a beautiful path starting from Cusco and passing through several incredible constructions and the sacredness is increased when it approached the Citadel of Machu Picchu.Inca Trail Hiking
+          Inca Trail Tours to Machu Picchu, the most emblematic Inca architectural work perched on a hill in a meander of the Urubamba River, accessible to authorized officials of the Empire and the Inca through a beautiful path starting from Cusco and passing through several incredible constructions and the sacredness is increased when it approached the Citadel of Machu Picchu.Inca Trail Hiking
         </p>
       </Column2>
       <Column3>
