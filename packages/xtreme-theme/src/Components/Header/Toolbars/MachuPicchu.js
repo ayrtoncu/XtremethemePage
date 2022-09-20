@@ -9,13 +9,13 @@ const MachuPicchu = () => {
         <Title>Departures to Machu Picchu</Title>
         <List>
           <Item>
-            <Link>Machu Picchu Full Day Tour</Link>
+            <Link link="/trip/machu-picchu-full-day-tour">Machu Picchu Full Day Tour</Link>
           </Item>
           <Item>
-            <Link>Machu Picchu With Overnight</Link>
+            <Link link="/trip/machu-picchu-with-overnight">Machu Picchu With Overnight</Link>
           </Item>
           <Item>
-            <Link>Machu Picchu - Sacred Valley 2 Days</Link>
+            <Link link="/trip/machu-picchu-sacred-valley-tours-2-days">Machu Picchu - Sacred Valley 2 Days</Link>
           </Item>
         </List>
       </Column1>
