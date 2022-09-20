@@ -7,6 +7,7 @@ const DayliTours = () => {
     <ContainerFlex>
       <Column>
         <Title>Daily Tours in Cusco</Title>
+        <p css={desciption}></p>
       </Column>
       <Column>
         <img src={qeswachaka}></img>
