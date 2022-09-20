@@ -88,14 +88,14 @@ let Item = styled.div`
   max-width: 35rem;
   height: 36px;
   a{
-    font-size: 13px;
+    font-size: 14px;
     color: #888;
   }
 `;
 const Title = styled.h3`
   position: relative;
   color: #333;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -119,6 +119,6 @@ const Title = styled.h3`
   }
 `;
 let desciption = css`
-font-size: 14px;
+font-size: 15px;
 color: #888;
 `;

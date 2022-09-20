@@ -16,43 +16,57 @@ const MenuToolbar = () => {
           <Collapse>
             <NavbarNav>
               <li>
-                <Link css={navlink}>Inca Trail</Link>
+                <Navlink>
+                  <Link>Inca Trail</Link>
+                </Navlink>
                 <ul>
                   <IncaTrail />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>Alternative Treks</Link>
+                <Navlink>
+                  <Link>Alternative Treks</Link>
+                </Navlink>
                 <ul>
                   <AlternativeTrek />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>Machu Picchu</Link>
+                <Navlink>
+                  <Link>Machu Picchu</Link>
+                </Navlink>
                 <ul>
                   <MachuPicchu />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>Dayli Tours</Link>
+                <Navlink>
+                  <Link>Dayli Tours</Link>
+                </Navlink>
                 <ul>
                   <DayliTours />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>Vacation Packages</Link>
+                <Navlink>
+                  <Link>Vacation Packages</Link>
+                </Navlink>
                 <ul>
                   <VacationPackages />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>Manu</Link>
+                <Navlink>
+                  <Link>Manu</Link>
+                </Navlink>
                 <ul>
                   <Manu />
                 </ul>
               </li>
               <li>
-                <Link css={navlink}>About US</Link>
+                <Navlink>
+                  <Link>About US</Link>
+                </Navlink>
                 <ul>
                   <AboutUs />
                 </ul>
@@ -96,6 +110,23 @@ const Collapse = styled.div`
   flex-grow: 1;
   align-items: center;
 `;
+const Navlink = styled.div`
+  color: #000 !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  padding: 20px !important;
+  border-bottom: 2px solid transparent;
+  display: block;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.35s ease-in-out;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
+`;
+
 const NavbarNav = styled.ul`
   margin-left: auto;
   margin-right: auto;
@@ -115,31 +146,17 @@ const NavbarNav = styled.ul`
       text-align: left;
       padding-top: 2.3rem;
       padding-bottom: 3rem;
-      width: 100% ;
-      border-bottom:1px solid;
-      border-color:#858585;
+      width: 100%;
+      border-bottom: 1px solid;
+      border-color: #858585;
     }
     &:hover {
       ul {
         display: block;
       }
+      ${Navlink} {
+        border-bottom: 3px solid #008b39;
+      }
     }
-  }
-`;
-
-let navlink = css`
-  color: #000 !important;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  padding: 20px !important;
-  border-bottom: 2px solid transparent;
-  display: block;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
-  cursor: pointer;
-  @media (max-width: 1024px) {
-    font-size: 12px;
   }
 `;
