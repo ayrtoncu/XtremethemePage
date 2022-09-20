@@ -1,6 +1,6 @@
 import { connect, styled } from "frontity";
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar1";
 import SliderBanner from "./PageSlider";
 import SectionOffers from "./BestOffers";
 import PresentatioSection from './SectionPresentation';
