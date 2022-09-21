@@ -6,7 +6,7 @@ import BannerPage from "../Secctions/BannerPage";
 import FooterSecction from "../Secctions/Footer";
 import TabsforTours from "../Secctions/TabsforTours";
 import { SpaceMaintop } from "../Components/componentsStyles";
-const Post = ({ state }) => {
+const Trips = ({ state }) => {
   const data = state.source.get(state.router.link);
   // console.log(data);
   const post = state.source[data.type][data.id];
@@ -17,6 +17,9 @@ const Post = ({ state }) => {
     <>
       <BannerPage titlepage={post.title.rendered} image={post.featured_img} />
       <SpaceMaintop>
+        <SideBarContainer>
+          
+        </SideBarContainer>
         <SideBarContainer>
           <SideBarContent>
             <TabsforTours data={post.acf} />
@@ -36,7 +39,7 @@ const Post = ({ state }) => {
     </>
   );
 };
-export default connect(Post);
+export default connect(Trips);
 const Main = styled.div`
   margin: auto;
   max-width: 90%;

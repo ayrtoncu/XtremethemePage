@@ -3,7 +3,7 @@ import { connect, Global, css, styled } from "frontity";
 import Switch from "@frontity/components/switch";
 import Script from "@frontity/components/script";
 import Navbar from "../Secctions/Navbar";
-import Post from "./post";
+import Trips from "./Trips";
 import Page from "./Page.js";
 import Home from "./Home.js";
 import MobileWrap from "../Secctions/MobileWrap";
@@ -17,7 +17,7 @@ const Root = ({ state, actions }) => {
         <MobileWrap/>
       </header>
       <Switch>
-        <Post when={data.isTrip} />
+        <Trips when={data.isTrip} />
         <Page when={data.isPage} />
         <Home when={data.isHome} />
       </Switch>
