@@ -6,6 +6,7 @@ import BannerPage from "../Secctions/BannerPage";
 import FooterSecction from "../Secctions/Footer";
 import TabsforTours from "../Secctions/TabsforTours";
 import { SpaceMaintop } from "../Components/componentsStyles";
+import HeaderTrip from "../Components/Trips/HeaderTrip";
 const Trips = ({ state }) => {
   const data = state.source.get(state.router.link);
   // console.log(data);
@@ -18,7 +19,7 @@ const Trips = ({ state }) => {
       <BannerPage titlepage={post.title.rendered} image={post.featured_img} />
       <SpaceMaintop>
         <SideBarContainer>
-          
+          <HeaderTrip titletrip={post.title.rendered} />
         </SideBarContainer>
         <SideBarContainer>
           <SideBarContent>
@@ -69,5 +70,5 @@ padding:40px 0px 30px 0px;
 line-height: 1.7;
 position:relative;
 float:right;
-width:33.3333%;   
+width:33.3333%;
 `;
