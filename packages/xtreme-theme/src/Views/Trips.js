@@ -11,7 +11,7 @@ const Trips = ({ state }) => {
   const data = state.source.get(state.router.link);
   // console.log(data);
   const post = state.source[data.type][data.id];
-  // console.log(post)
+  console.log(post)
   //const formattedDate = dayjs (post.date).format("DD MMMM YYYY")
 
   return (
@@ -19,7 +19,7 @@ const Trips = ({ state }) => {
       <BannerPage titlepage={post.title.rendered} image={post.featured_img} />
       <SpaceMaintop>
         <SideBarContainer>
-          <HeaderTrip titletrip={post.title.rendered} />
+          <HeaderTrip titletrip={post.title.rendered} timetrip={post.acf.time} sizetrip={post.acf.size} altitudetrip={post.acf.max_altitud} activitylvltrip={post.acf.activity_level} />
         </SideBarContainer>
         <SideBarContainer>
           <SideBarContent>

@@ -5,7 +5,7 @@ import time from "../../assets/imgs/tours/details/icon-time.png";
 import mountain from "../../assets/imgs/tours/details/icons-mountain.png";
 import activitylevel from "../../assets/imgs/tours/details/activity-difficulty.svg";
 
-const HeaderTrip = ({ titletrip }) => {
+const HeaderTrip = ({ titletrip,timetrip,sizetrip,altitudetrip, activitylvltrip}) => {
   return (
     <>
       <ColumDetail>
@@ -21,7 +21,7 @@ const HeaderTrip = ({ titletrip }) => {
                 <img src={time} />
               </IconDetail>
               <TextDetail>
-                <span></span>
+                <span>{timetrip} Days {timetrip-1} Nights</span>
               </TextDetail>
             </DetailsItem>
             <DetailsItem>
@@ -29,7 +29,7 @@ const HeaderTrip = ({ titletrip }) => {
                 <img src={guest} />
               </IconDetail>
               <TextDetail>
-                <span></span>
+                <span>Max Guests : {sizetrip}</span>
               </TextDetail>
             </DetailsItem>
             <DetailsItem>
@@ -37,7 +37,7 @@ const HeaderTrip = ({ titletrip }) => {
                 <img src={mountain} />
               </IconDetail>
               <TextDetail>
-                <span></span>
+                <span>Max. Altitude : {altitudetrip.min_altitud} - {altitudetrip.max_altitud}m</span>
               </TextDetail>
             </DetailsItem>
             <DetailsItem>
@@ -45,7 +45,7 @@ const HeaderTrip = ({ titletrip }) => {
                 <img src={activitylevel} />
               </IconDetail>
               <TextDetail>
-                <span></span>
+                <span>Act. Level: {activitylvltrip}</span>
               </TextDetail>
             </DetailsItem>
           </Details>
@@ -81,12 +81,13 @@ const TourTitleItem = styled.h1`
   font-family: "DM Serif Display", serif;
 `;
 
-const Details = styled.div`
+const Details = styled.ul`
   width: 900px;
   margin-left: 0;
   margin-bottom: 0;
+  list-style:none;
 `;
-const DetailsItem = styled.div`
+const DetailsItem = styled.li`
   padding-top: 0;
   clear: none;
   height: auto;
@@ -95,6 +96,7 @@ const DetailsItem = styled.div`
   zoom: 1;
   float: left;
   width: 25%;
+  line-height:1.7;
   @media(max-width: 960px;){
     width: 100%;
   }
