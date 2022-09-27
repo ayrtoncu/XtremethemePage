@@ -1,4 +1,3 @@
-import { connect } from 'frontity'
 import React from 'react';
 import iconOpen from '../Icons/menuicons/expand_more_white_24dp.svg';
 import iconClose from '../Icons/menuicons/expand_less_white_24dp.svg';

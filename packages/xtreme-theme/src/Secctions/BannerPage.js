@@ -1,8 +1,7 @@
-import { Global, connect, css,styled  } from "frontity";
+import { connect, css,styled  } from "frontity";
 import React from 'react';
-import banner from '../assets/imgs/banner/Salkantaybanner.jpg'
 
-const Bannerpage = ({props, image, titlepage}) => {
+const Bannerpage = ({image, titlepage}) => {
   return (
     <ContentBanner>
       <div css={wrapperbanner}>

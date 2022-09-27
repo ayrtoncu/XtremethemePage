@@ -1,6 +1,7 @@
-import { connect, css, styled } from "frontity";
+import { connect, css, styled, loadable } from "frontity";
 import React from "react";
-import banner from '../assets/imgs/banner/Salkantaybanner.jpg'
+import banner from '../assets/imgs/banner/Salkantaybanner.jpg';
+// const banner = loadable(() => import("../assets/imgs/banner/Salkantaybanner.jpg"));
 
 const GdrlCoreWrapper = () => {
   return (

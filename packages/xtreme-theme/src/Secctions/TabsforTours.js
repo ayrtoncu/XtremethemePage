@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { connect, styled, css } from "frontity";
-import { Sectiondiv} from "../Components/componentsStyles";
+import { connect, styled, css, loadable } from "frontity";
+import { Sectiondiv } from "../Components/componentsStyles";
+// const Overview = loadable(() => import("../Components/Tabs/Overview"));
+// const ItIncludes = loadable(() => import("../Components/Tabs/ItInclude"));
+// const Itinerary = loadable(() => import("../Components/Tabs/Itinerary"));
+// const TravelInfo = loadable(() => import("../Components/Tabs/TravelInfo"));
+// const PackingList = loadable(() => import("../Components/Tabs/PackingList"));
 import Overview from "../Components/Tabs/Overview";
 import ItIncludes from "../Components/Tabs/ItIncludes";
 import Itinerary from "../Components/Tabs/Itinerary";

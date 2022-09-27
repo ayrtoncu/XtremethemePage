@@ -1,7 +1,9 @@
-import { connect, css, styled } from 'frontity';
+import { connect, styled, loadable } from 'frontity';
 import React from 'react';
-import logo from '../assets/imgs/logos/LogoCompletosinfondos.png'
+// import logo from '../assets/imgs/logos/LogoCompletosinfondos.png'
 import SidebarMovil from './SidebarMovil';
+const logo = loadable(() => import("../assets/imgs/logos/LogoCompletosinfondos.png"));
+// const SidebarMovil = loadable(() => import("./SidebarMovil"));
 
 const MobileWrap = () => {
   return (

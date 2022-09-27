@@ -1,20 +1,19 @@
-import React from "react";
 import { connect, Global, css, loadable } from "frontity";
 import Switch from "@frontity/components/switch";
-import Script from "@frontity/components/script";
 
 // const Navbar = loadable(() => import("../Secctions/Navbar"));
+const Tawkto = loadable(() => import('../Components/Tawkto'));
 const Trips = loadable(() => import('./Trips'));
-// const Page = loadable(() => import('./Page.js'));
-// const Home = loadable(() => import('./Home.js'));
+const Page = loadable(() => import('./Page.js'));
+const Home = loadable(() => import('./Home.js'));
 const MobileWrap = loadable(() => import('../Secctions/MobileWrap'));
 import Navbar from "../Secctions/Navbar";
 // import Trips from "./Trips";
-import Page from "./Page.js";
-import Home from "./Home.js";
+// import Page from "./Page.js";
+// import Home from "./Home.js";
 // import MobileWrap from "../Secctions/MobileWrap";
 
-const Root = ({ state, actions }) => {
+const Root = ({ state}) => {
   const data = state.source.get(state.router.link);
   return (
     <>
@@ -28,19 +27,7 @@ const Root = ({ state, actions }) => {
         <Home when={data.isHome} />
       </Switch>
       <Global styles={globalStyles} />
-      <Script
-        code={`
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5c8844a4101df77a8be24a10/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        `}
-      />
+      <Tawkto/>
     </>
   );
 };

@@ -1,25 +1,27 @@
 import React, { useEffect } from "react";
-import { connect, styled } from "frontity";
-import BannerPage from "../Secctions/BannerPage";
-import FooterSecction from "../Secctions/Footer";
-import cuscobanner from "../assets/imgs/banner/bannerCusco.jpg";
+import { connect, styled, loadable } from "frontity";
+const BannerPage = loadable(() => import("../Secctions/BannerPage"));
+// import BannerPage from "../Secctions/BannerPage";
+const FooterSecction = loadable(() => import("../Secctions/Footer"));
+// import FooterSecction from "../Secctions/Footer";
+// import cuscobanner from "../assets/imgs/banner/bannerCusco.jpg";
+const cuscobanner = loadable(() =>
+  import("../assets/imgs/banner/bannerCusco.jpg")
+);
 
-const Page = ({ state, styled }) => {
+const Page = ({ state }) => {
   const data = state.source.get(state.router.link);
   const page = state.source[data.type][data.id];
   // console.log(page);
   const [imagebanner, setimagebanner] = React.useState("");
   const image = page.featured_img;
-  console.log(image);
-  console.log(page.title.rendered);
   useEffect(() => {
     image == false ? setimagebanner(cuscobanner) : setimagebanner(image);
   }, []);
-  console.log(imagebanner);
   return (
     <>
+      <BannerPage image={imagebanner} titlepage={page.title.rendered} />
       <Main>
-        <BannerPage image={imagebanner} titlepage={page.title.rendered} />
         <ContentInnner>
           <h2>{page.title.rendered} </h2>
           <div

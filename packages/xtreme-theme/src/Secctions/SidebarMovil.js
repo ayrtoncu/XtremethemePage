@@ -1,16 +1,18 @@
-import { connect, styled, css } from "frontity";
-import React, { useState } from "react";
-import menubar from "../Icons/326672_menu_icon.svg";
-import closemenu from "../Icons/cancel_black_24dp.svg";
+import { connect, styled, loadable } from "frontity";
+import { useState } from "react";
+// import menubar from "../Icons/326672_menu_icon.svg";
+// import closemenu from "../Icons/cancel_black_24dp.svg";
 import SidebarData from "../Dataset/SidebarData";
-import SubMenu from "../Components/SubmenuSlider";
+// import SubMenu from "../Components/SubmenuSlider";
+const menubar = loadable(() => import('../Icons/326672_menu_icon.svg'));
+const closemenu = loadable(() => import('../Icons/cancel_black_24dp.svg'));
+// const SidebarData = loadable(() => import('../Dataset/SidebarData'));
+const SubMenu = loadable(() => import('../Components/SubmenuSlider'));
 
 const SidebarMovil = () => {
   const [sidebar, setSidebar] = useState(false);
-  let data = [];
   const showSidebar = () => {
     setSidebar(!sidebar);
-    // console.log(SidebarData)
   };
 
   return (

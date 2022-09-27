@@ -18,7 +18,6 @@ const Trips = ({ state }) => {
   const data = state.source.get(state.router.link);
   // console.log(data);
   const post = state.source[data.type][data.id];
-  console.log(post)
   //const formattedDate = dayjs (post.date).format("DD MMMM YYYY")
 
   return (

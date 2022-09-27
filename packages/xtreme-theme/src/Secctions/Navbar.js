@@ -1,10 +1,11 @@
 import { connect, styled, loadable } from "frontity";
-import React from "react";
 
 const MenuToolbar = loadable(() => import('../Components/Header/MenuToolbar'));
+const TopBarSocial = loadable(() => import('../Components/Header/TopBarSocial'));
+const NewsletterHeader = loadable(() => import('../Components/Header/NewsletterHeader'));
 // import MenuToolbar from "../Components/Header/MenuToolbar";
-import TopBarSocial from "../Components/Header/TopBarSocial";
-import NewsletterHeader from "../Components/Header/NewsletterHeader";
+// import TopBarSocial from "../Components/Header/TopBarSocial";
+// import NewsletterHeader from "../Components/Header/NewsletterHeader";
 
 const Navbar = () => {
   return (
