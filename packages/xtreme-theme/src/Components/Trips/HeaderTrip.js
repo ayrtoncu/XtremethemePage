@@ -5,7 +5,13 @@ import time from "../../assets/imgs/tours/details/icon-time.png";
 import mountain from "../../assets/imgs/tours/details/icons-mountain.png";
 import activitylevel from "../../assets/imgs/tours/details/activity-difficulty.svg";
 
-const HeaderTrip = ({ titletrip,timetrip,sizetrip,altitudetrip, activitylvltrip}) => {
+const HeaderTrip = ({
+  titletrip,
+  timetrip,
+  sizetrip,
+  altitudetrip,
+  activitylvltrip,
+}) => {
   return (
     <>
       <ColumDetail>
@@ -21,7 +27,9 @@ const HeaderTrip = ({ titletrip,timetrip,sizetrip,altitudetrip, activitylvltrip}
                 <img src={time} />
               </IconDetail>
               <TextDetail>
-                <span>{timetrip} Days {timetrip-1} Nights</span>
+                <span>
+                  {timetrip} Days {timetrip - 1} Nights
+                </span>
               </TextDetail>
             </DetailsItem>
             <DetailsItem>
@@ -32,14 +40,19 @@ const HeaderTrip = ({ titletrip,timetrip,sizetrip,altitudetrip, activitylvltrip}
                 <span>Max Guests : {sizetrip}</span>
               </TextDetail>
             </DetailsItem>
-            <DetailsItem>
-              <IconDetail>
-                <img src={mountain} />
-              </IconDetail>
-              <TextDetail>
-                <span>Max. Altitude : {altitudetrip.min_altitud} - {altitudetrip.max_altitud}m</span>
-              </TextDetail>
-            </DetailsItem>
+            {altitudetrip ?
+              <DetailsItem>
+                <IconDetail>
+                  <img src={mountain} />
+                </IconDetail>
+                <TextDetail>
+                  <span>
+                    Max. Altitude : {altitudetrip.min_altitud} -{" "}
+                    {altitudetrip.max_altitud}m
+                  </span>
+                </TextDetail>
+              </DetailsItem>: undefined
+            }
             <DetailsItem>
               <IconDetail>
                 <img src={activitylevel} />
@@ -85,7 +98,7 @@ const Details = styled.ul`
   width: 900px;
   margin-left: 0;
   margin-bottom: 0;
-  list-style:none;
+  list-style: none;
 `;
 const DetailsItem = styled.li`
   padding-top: 0;
@@ -96,8 +109,8 @@ const DetailsItem = styled.li`
   zoom: 1;
   float: left;
   width: 25%;
-  line-height:1.7;
-  @media(max-width: 960px;){
+  line-height: 1.7;
+  @media (max-width: 960px;) {
     width: 100%;
   }
 `;
@@ -113,11 +126,11 @@ const IconDetail = styled.div`
   }
 `;
 const TextDetail = styled.div`
-overflow:hidden;
-span{
-  color:#6d6d6d;
-  font-size:17px;
-  font-weight:400;
-  display:block;
-}
+  overflow: hidden;
+  span {
+    color: #6d6d6d;
+    font-size: 17px;
+    font-weight: 400;
+    display: block;
+  }
 `;

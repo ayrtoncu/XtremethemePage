@@ -1,18 +1,22 @@
-import { connect ,css,styled} from 'frontity';
-import React, { useState } from 'react';
+import { connect, css, styled } from "frontity";
+import React, { useState } from "react";
 import iconOpen from "../../Icons/menuicons/expand_more_black_24dp.svg";
 import iconClose from "../../Icons/menuicons/expand_less_black_24dp.svg";
 
-const TravelInfo = ({travelData}) => {
+const TravelInfo = ({ travelData }) => {
   return (
     <>
-      {travelData.map(function (info, index) {
-        return <Slider key={index} dataTravel={info}/>;
-      })}
+      {travelData ? (
+        <>
+          {travelData.map(function (info, index) {
+            return <Slider key={index} dataTravel={info} />;
+          })}
+        </>
+      ) : undefined}
     </>
     // <div dangerouslySetInnerHTML={{ __html: travelData.travelData }}></div>
-  )
-}
+  );
+};
 export default connect(TravelInfo);
 
 //slider
@@ -25,37 +29,37 @@ const Slider = ({ dataTravel }) => {
       <div css={sidebarLink} onClick={dataTravel.text_info && showSubnav}>
         <div>
           {/* {item.icon} */}
-          <SidebarLabel >{dataTravel.title_info}</SidebarLabel>
+          <SidebarLabel>{dataTravel.title_info}</SidebarLabel>
         </div>
         <div>
-          {dataTravel.text_info && subnav
-            ? <IconOpen/>
-            : <div dangerouslySetInnerHTML={{ __html: dataTravel.text_info }}></div>
-            ? <IconClose/>
-            : null}
+          {dataTravel.text_info && subnav ? (
+            <IconOpen />
+          ) : <div
+              dangerouslySetInnerHTML={{ __html: dataTravel.text_info }}
+            ></div> ? (
+            <IconClose />
+          ) : null}
         </div>
       </div>
-      {subnav && <div css={dropdownLink}>
-        <div  dangerouslySetInnerHTML={{ __html: dataTravel.text_info }}></div>
-      </div>}
+      {subnav && (
+        <div css={dropdownLink}>
+          <div dangerouslySetInnerHTML={{ __html: dataTravel.text_info }}></div>
+        </div>
+      )}
     </div>
   );
 };
 
 const IconClose = () => {
-  return (
-    <img src={ iconOpen} />
-  )
-}
+  return <img src={iconOpen} />;
+};
 const IconOpen = () => {
-  return (
-    <img src={ iconClose} />
-  )
-}
+  return <img src={iconClose} />;
+};
 const SidebarLabel = styled.span`
   margin-left: 16px;
-  -webkit-line-clamp: 2!important;
-  overflow:hidden;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   display: -webkit-box;
 `;

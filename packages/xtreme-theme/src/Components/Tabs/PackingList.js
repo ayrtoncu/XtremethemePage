@@ -3,7 +3,6 @@ import React from 'react';
 import checkIcon from '../../assets/icons/check-icon.svg'
 
 const PackingList = ({ packingListData }) => {
-  console.log(packingListData[0].list)
   return (
     <IncludeContent>
       <List list={packingListData}></List>
