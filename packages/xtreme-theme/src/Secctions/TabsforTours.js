@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect, styled, css } from "frontity";
-import { Sectiondiv, Container } from "../Components/componentsStyles";
+import { Sectiondiv} from "../Components/componentsStyles";
 import Overview from "../Components/Tabs/Overview";
 import ItIncludes from "../Components/Tabs/ItIncludes";
 import Itinerary from "../Components/Tabs/Itinerary";

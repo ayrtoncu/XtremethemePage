@@ -1,7 +1,13 @@
 import React from "react";
-import { connect, Global, css, styled } from "frontity";
+import { connect, Global, css, loadable } from "frontity";
 import Switch from "@frontity/components/switch";
 import Script from "@frontity/components/script";
+
+// const Navbar = loadable(() => import("../Secctions/Navbar"));
+// const Trips = loadable(() => import('./Trips'));
+// const Page = loadable(() => import('./Page.js'));
+// const Home = loadable(() => import('./Home.js'));
+const MobileWrap = loadable(() => import('../Secctions/MobileWrap'));
 import Navbar from "../Secctions/Navbar";
 import Trips from "./Trips";
 import Page from "./Page.js";

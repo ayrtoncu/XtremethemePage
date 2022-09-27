@@ -1,4 +1,4 @@
-import { connect, css } from "frontity";
+import { connect } from "frontity";
 import React from "react";
 import Wrapper from "../Secctions/Wrapper";
 

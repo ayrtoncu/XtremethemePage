@@ -1,11 +1,18 @@
 import React from "react";
-import { connect, styled } from "frontity";
-import XtremeExcellence from "../Secctions/XtremeExcellence";
-import BestOffers from "../Secctions/BestOffers";
-import BannerPage from "../Secctions/BannerPage";
-import FooterSecction from "../Secctions/Footer";
-import TabsforTours from "../Secctions/TabsforTours";
+import { connect, styled, loadable } from "frontity";
+
+//Imports
+const BestOffers = loadable(() => import('../Secctions/BestOffers'));
+const BannerPage = loadable(() => import('../Secctions/BannerPage'));
+const FooterSecction = loadable(() => import('../Secctions/Footer'));
+const TabsforTours = loadable(() => import('../Secctions/TabsforTours'));
+// const SpaceMaintop = loadable(() => import('../Components/componentsStyles'));
+// import BestOffers from "../Secctions/BestOffers";
+// import BannerPage from "../Secctions/BannerPage";
+// import FooterSecction from "../Secctions/Footer";
+// import TabsforTours from "../Secctions/TabsforTours";
 import { SpaceMaintop } from "../Components/componentsStyles";
+
 import HeaderTrip from "../Components/Trips/HeaderTrip";
 const Trips = ({ state }) => {
   const data = state.source.get(state.router.link);
