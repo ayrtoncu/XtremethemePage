@@ -1,6 +1,8 @@
-import { connect, styled } from "frontity";
+import { connect, styled, loadable } from "frontity";
 import React from "react";
-import MenuToolbar from "../Components/Header/MenuToolbar";
+
+const MenuToolbar = loadable(() => import('../Components/Header/MenuToolbar'));
+// import MenuToolbar from "../Components/Header/MenuToolbar";
 import TopBarSocial from "../Components/Header/TopBarSocial";
 import NewsletterHeader from "../Components/Header/NewsletterHeader";
 

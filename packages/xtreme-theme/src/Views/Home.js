@@ -1,8 +1,9 @@
-import { connect } from "frontity";
+import { connect, loadable } from "frontity";
 import React from "react";
-import Wrapper from "../Secctions/Wrapper";
+// import Wrapper from "../Secctions/Wrapper";
+const Wrapper = loadable(() => import('../Secctions/Wrapper'));
 
-const Home = ({ state }) => {
+const Home = () => {
   return <Wrapper />;
 };
 
