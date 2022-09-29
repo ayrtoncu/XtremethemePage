@@ -1,5 +1,4 @@
-import React from "react";
-import { connect, css, styled } from "frontity";
+import { styled } from "frontity";
 export const Sectiondiv = styled.div`
   padding: 60px 0 30px 0;
   float: left;

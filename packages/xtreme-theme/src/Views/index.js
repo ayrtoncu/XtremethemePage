@@ -1,33 +1,25 @@
-import { connect, Global, css, loadable } from "frontity";
-import Switch from "@frontity/components/switch";
+import { connect, css,Global, loadable } from "frontity";
 
-// const Navbar = loadable(() => import("../Secctions/Navbar"));
-const Tawkto = loadable(() => import('../Components/Tawkto'));
-const Trips = loadable(() => import('./Trips'));
-const Page = loadable(() => import('./Page.js'));
-const Home = loadable(() => import('./Home.js'));
-const MobileWrap = loadable(() => import('../Secctions/MobileWrap'));
-import Navbar from "../Secctions/Navbar";
-// import Trips from "./Trips";
-// import Page from "./Page.js";
-// import Home from "./Home.js";
-// import MobileWrap from "../Secctions/MobileWrap";
+const Navbar = loadable(() => import("../Secctions/Navbar"));
+const Tawkto = loadable(() => import("../Components/Tawkto"));
+const Trips = loadable(() => import("./Trips"));
+const Page = loadable(() => import("./Page.js"));
+const Home = loadable(() => import("./Home.js"));
+const MobileWrap = loadable(() => import("../Secctions/MobileWrap"));
 
-const Root = ({ state}) => {
+const Root = ({ state }) => {
   const data = state.source.get(state.router.link);
   return (
     <>
       <header>
-        <Navbar/>
-        <MobileWrap/>
+        <Navbar />
+        <MobileWrap />
       </header>
-      <Switch>
-        <Trips when={data.isTrip} />
-        <Page when={data.isPage} />
-        <Home when={data.isHome} />
-      </Switch>
+      {data.isTrip && <Trips />}
+      {data.isPage && <Page />}
+      {data.isHome && <Home />}
       <Global styles={globalStyles} />
-      <Tawkto/>
+      <Tawkto />
     </>
   );
 };
@@ -54,11 +46,12 @@ const globalStyles = css`
     color: inherit;
     text-decoration: none;
   }
-  img{
-    max-width:100%;
-    height:auto;
+  img {
+    max-width: 100%;
+    height: auto;
   }
-  img, svg{
+  img,
+  svg {
     vertical-align: middle;
   }
 `;
