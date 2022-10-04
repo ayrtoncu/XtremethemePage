@@ -1,11 +1,11 @@
 import { connect, styled, loadable } from "frontity";
 import { useState } from "react";
-// import menubar from "../Icons/326672_menu_icon.svg";
-// import closemenu from "../Icons/cancel_black_24dp.svg";
+import menubar from "../Icons/326672_menu_icon.svg";
+import closemenu from "../Icons/cancel_black_24dp.svg";
 import SidebarData from "../Dataset/SidebarData";
 // import SubMenu from "../Components/SubmenuSlider";
-const menubar = loadable(() => import('../Icons/326672_menu_icon.svg'));
-const closemenu = loadable(() => import('../Icons/cancel_black_24dp.svg'));
+// const menubar = loadable(() => import('../Icons/326672_menu_icon.svg'));
+// const closemenu = loadable(() => import('../Icons/cancel_black_24dp.svg'));
 // const SidebarData = loadable(() => import('../Dataset/SidebarData'));
 const SubMenu = loadable(() => import('../Components/SubmenuSlider'));
 
@@ -46,17 +46,16 @@ const MobileIconOpen = styled.div`
     width: 25px;
     float: left;
     transition: all 0.2s ease;
-    margin-top: 20px;
   }
 `;
 const MobileIconClose = styled.div`
   display: none;
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 2rem;
   margin-top: 10px;
   height: 40px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 `;
 const SidebarNav = styled.nav`

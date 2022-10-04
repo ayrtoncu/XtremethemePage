@@ -1,7 +1,7 @@
 import { connect, styled, css,loadable } from "frontity";
 import React from "react";
-// import tripadivorchoice from '../assets/imgs/certifies/tripadvisor-salkantay-trekking-150x150.png';
-const tripadivorchoice = loadable(() => import("../assets/imgs/certifies/tripadvisor-salkantay-trekking-150x150.png"));
+import tripadivorchoice from '../assets/imgs/certifies/tripadvisor-salkantay-trekking-150x150.png';
+// const tripadivorchoice = loadable(() => import("../assets/imgs/certifies/tripadvisor-salkantay-trekking-150x150.png"));
 
 const PresentatioSection = () => {
   return (
